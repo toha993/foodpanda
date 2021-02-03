@@ -7,6 +7,7 @@ var orderSchema = mongoose.Schema({
     contact: String,
     items: Array,
     specialInstructions: String,
+    specialLocations: String,
     selectedShop: String,
     selectedShop_id: String,
     favorited: Boolean,
@@ -17,7 +18,6 @@ var orderSchema = mongoose.Schema({
     timeSelectedForPickup: String,
     expectedPickupTime: String,
     completed: Boolean,
-    payment : Array
 });
 
 var Orders = mongoose.model('Order', orderSchema);

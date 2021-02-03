@@ -27556,7 +27556,8 @@
 	                decaf: _react2.default.PropTypes.boolean,
 	                hotOrCold: _react2.default.PropTypes.string
 	            })),
-	            specialInstructions: _react2.default.PropTypes.string,
+				specialInstructions: _react2.default.PropTypes.string,
+				specialLocations:  _react2.default.PropTypes.string,
 	            time: _react2.default.PropTypes.string,
 	            timeSelectedForPickup: _react2.default.PropTypes.string,
 	            expectedPickupTime: _react2.default.PropTypes.string,
@@ -27615,6 +27616,18 @@
 	                ''
 	            );
 			}
+
+			if (this.props.order.specialLocations) {
+	            var specialLocations = _react2.default.createElement(
+	                'div',
+					{ className: 'special-instructions' },
+	                'Address: ', 
+	                this.props.order.specialLocations,
+					'',
+	            );
+			}
+
+
 			if(this.props.order.timeSelectedForPickup==="true")
 				this.props.order.timeSelectedForPickup=this.props.order.time;
 			//console.log(this.props.order.time);
@@ -27661,7 +27674,8 @@
 						
 						orderDetails,
 						cost,
-	                    specialInstructions
+						specialInstructions,
+						specialLocations
 	                ),
 	                _react2.default.createElement(
 	                    'div',

@@ -27581,7 +27581,8 @@
 	                decaf: _react2.default.PropTypes.boolean,
 	                hotOrCold: _react2.default.PropTypes.string
 	            })),
-	            specialInstructions: _react2.default.PropTypes.string,
+				specialInstructions: _react2.default.PropTypes.string,
+				specialLocations:  _react2.default.PropTypes.string,
 	            time: _react2.default.PropTypes.string,
 	            timeSelectedForPickup: _react2.default.PropTypes.string,
 	            expectedPickupTime: _react2.default.PropTypes.string,
@@ -27599,13 +27600,13 @@
 	    _handleCompleteOrder: function _handleCompleteOrder() {
 			let totalcost = 0;
 			console.log('completing order');
-			this.props.order.items.map(function (item, i) {
-				totalcost +=item.price*item.quantity;
-				totalcost += totalcost*0.1;
-				totalcost=totalcost.toFixed(2);
-				// income +=Number(totalcost);
-				// console.log(income);
-			});
+			// this.props.order.items.map(function (item, i) {
+			// 	totalcost +=item.price*item.quantity;
+			// 	totalcost += totalcost*0.1;
+			// 	totalcost=totalcost.toFixed(2);
+			// 	// income +=Number(totalcost);
+			// 	// console.log(income);
+			// });
 		//	income += this.props.order.cost;
 			this.props.completeOrder(this.props.order._id);
 			
@@ -27628,14 +27629,24 @@
 					item: item,		
 				 });
 			});
-			
+			//console.log(this.props.order.specialLocations);
 	        if (this.props.order.specialInstructions) {
 	            var specialInstructions = _react2.default.createElement(
 	                'div',
 					{ className: 'special-instructions' },
-	                'Contact: ', 
+	                'Contact No: ', 
 	                this.props.order.specialInstructions,
-	                ''
+					'',
+	            );
+			}
+
+			if (this.props.order.specialLocations) {
+	            var specialLocations = _react2.default.createElement(
+	                'div',
+					{ className: 'special-instructions' },
+	                'Address: ', 
+	                this.props.order.specialLocations,
+					'',
 	            );
 			}
 			if(this.props.order.timeSelectedForPickup==="true")
@@ -27682,7 +27693,8 @@
 						
 						orderDetails,
 						cost,
-	                    specialInstructions
+						specialInstructions,
+						specialLocations
 	                ),
 	                _react2.default.createElement(
 	                    'div',

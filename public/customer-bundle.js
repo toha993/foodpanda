@@ -25820,7 +25820,8 @@
 	            duration: '',
 	            durationSeconds: undefined,
 	            items: [],
-	            specialInstructions: '',
+				specialInstructions: '',
+				specialLocations: '',
 	            notification: {
 	                add: false,
 	                delete: false,
@@ -26028,13 +26029,14 @@
 	        } else {
 	            var expectedPickupTime = '';
 	        }
-
+			console.log(this.state.specialLocations);
 	        var date = (0, _moment2.default)().format('l');
 	        var time = (0, _moment2.default)().format('LT');
 	        _superagent2.default.post('/api/orders').set('Content-Type', 'application/json').send({
 				username: this.state.username,
 	            items: this.state.items,
-	            specialInstructions: this.state.specialInstructions,
+				specialInstructions: this.state.specialInstructions,
+				specialLocations: this.state.specialLocations,
 	            selectedShop: this.state.selectedShop.name,
 	            selectedShop_id: this.state.selectedShop.place_id,
 	            favorited: this.state.favorite,
@@ -26045,7 +26047,6 @@
 	            timeSelectedForPickup: this.state.pickupTime,
 	            expectedPickupTime: expectedPickupTime,
 				completed: false,
-				payment : this.state.paymentInfo.nameOnCard
 	        }).end(function (err, res) {
 	            if (err) {
 	                console.log(err);
@@ -26059,7 +26060,8 @@
 	    _handleStateClear: function _handleStateClear() {
 	        this.setState({
 	            items: [],
-	            specialInstructions: '',
+				specialInstructions: '',
+				specialLocations:'',
 	            methodOfTrans: '',
 	            favorite: false,
 	            paymentInfo: {
@@ -26241,6 +26243,12 @@
 	        this.setState({
 	            specialInstructions: event.target.value
 	        });
+		},
+		
+		_handleSpecialLocations: function _handleSpecialLocations(event) {
+	        this.setState({
+	            specialLocations: event.target.value
+	        });
 	    },
 
 	    _handleAddItemToOrder: function _handleAddItemToOrder(itemDetails) {
@@ -26389,8 +26397,10 @@
 	                    handleSelectedShop: this._handleSelectedShop,
 	                    distance: this.state.distance,
 	                    duration: this.state.duration,
-	                    handleSpecialInstructions: this._handleSpecialInstructions,
-	                    specialInstructions: this.state.specialInstructions,
+						handleSpecialInstructions: this._handleSpecialInstructions,
+						handleSpecialLocations:this._handleSpecialLocations,
+						specialInstructions: this.state.specialInstructions,
+						specialLocations: this.state.specialLocations,
 	                    notification: this.state.notification,
 	                    toggleAddNotification: this._toggleAddNotification,
 	                    toggleDeleteNotification: this._toggleDeleteNotification,
@@ -59517,6 +59527,7 @@
 	        data: _react2.default.PropTypes.object,
 			items: _react2.default.PropTypes.array,
 			handleSpecialInstructions: _react2.default.PropTypes.func,
+			handleSpecialLocations: _react2.default.PropTypes.func,
 	       // handleSpecialInstructions: _react2.default.PropTypes.func,
 	        handleAddItemToOrder: _react2.default.PropTypes.func,
 	        handleDeleteItemFromOrder: _react2.default.PropTypes.func,
@@ -59629,7 +59640,8 @@
 	        handleAddItemToOrder: _react2.default.PropTypes.func,
 	        toggleAddNotification: _react2.default.PropTypes.func,
 	        toggleErrorNotification: _react2.default.PropTypes.func,
-	        handleSpecialInstructions: _react2.default.PropTypes.func
+			handleSpecialInstructions: _react2.default.PropTypes.func,
+			handleSpecialLocations: _react2.default.PropTypes.func
 	    },
 
 	    render: function render() {
@@ -60903,7 +60915,9 @@
 		
 
 	    propTypes: {
-			handleSpecialInstructions: _react2.default.PropTypes.func
+			handleSpecialInstructions: _react2.default.PropTypes.func,
+			handleSpecialLocations: _react2.default.PropTypes.func
+
 			
 	    },
 
@@ -60915,7 +60929,7 @@
 	            _react2.default.createElement(
 	                'h2',
 	                null,
-	                'Enter Payment Info'
+	                'Enter Your Contact and Address'
 	            ),
 	            //'section',
 				_react2.default.createElement('textarea', {
@@ -60923,7 +60937,13 @@
 					placeholder: 'Your Contact Number',
 	                rows: '2',
 					cols: '31',
-					required: true})
+					required: true}),
+				_react2.default.createElement('textarea', {
+						onChange: this.props.handleSpecialLocations,
+						placeholder: 'Your Address',
+						rows: '2',
+						cols: '31',
+						required: true})
 	        );
 	    }
 	});
@@ -61410,6 +61430,7 @@
 
 	    propTypes: {
 			handleSpecialInstructions: _react2.default.PropTypes.func,
+			handleSpecialLocations: _react2.default.PropTypes.func,
 	        handleMethodOfTrans: _react2.default.PropTypes.func,
 	        handlePickupTime: _react2.default.PropTypes.func,
 	        pickupTime: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.bool]),
@@ -61507,7 +61528,11 @@
 	                        expYearValue: this.props.expYear || 'default',
 							handleCCCVV: this.props.handleCCCVV }),
 						_react2.default.createElement(_SpecialInstructions2.default, {
-								handleSpecialInstructions: this.props.handleSpecialInstructions }),
+								handleSpecialInstructions: this.props.handleSpecialInstructions,
+								handleSpecialLocations: this.props.handleSpecialLocations 
+							 }),
+						// _react2.default.createElement(_SpecialInstructions2.default, {
+						// 		handleSpecialLocations: this.props.handleSpecialLocations }),
 					),
 					// _react2.default.createElement(_SpecialInstructions2.default, {
 					// 	handleSpecialInstructions: this.props.handleSpecialInstructions }),
@@ -61679,7 +61704,7 @@
 	            _react2.default.createElement(
 	                'h2',
 	                null,
-	                'Pick up now or schedule pick up?'
+	                'Delivey now or schedule pick up?'
 	            ),
 	            _react2.default.createElement(
 	                'div',
@@ -62440,7 +62465,8 @@
 	    propTypes: {
 	        items: _react2.default.PropTypes.array,
 	        handleDeleteItemFromOrder: _react2.default.PropTypes.func,
-	        specialInstructions: _react2.default.PropTypes.string,
+			specialInstructions: _react2.default.PropTypes.string,
+			specialLocations: _react2.default.PropTypes.string,
 	        handleOrderSubmit: _react2.default.PropTypes.func
 		},
 		
@@ -62448,18 +62474,7 @@
 
 	    render: function render() {
 
-			var confirmed =_react2.default.createElement(
-				_reactRouter.Link,
-				{ to: '/confirmation', className: 'order-summary-link' },
-				_react2.default.createElement(
-					'button',
-					{
-						onClick: this.props.handleOrderSubmit,
-						className: 'next-button order-summary-button' },
-					'Submit Order',
-					_react2.default.createElement('i', { className: 'fa fa-check fa-lg', 'aria-hidden': 'true' })
-				)
-			);
+			var confirmed;
 			if(!this.props.specialInstructions)
 			var specialInstructions = _react2.default.createElement(
 				'div',
@@ -62491,8 +62506,57 @@
 	                null,
 	                this.props.specialInstructions
 				),
-				confirmed
 			 );
+
+			 if(!this.props.specialLocations)
+			 {
+				var specialLocations =_react2.default.createElement(
+				'div',
+	            null,
+	            _react2.default.createElement(
+	                'h4',
+	                null,
+	                'Your Address:'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'Please add your address.'
+				),
+				);
+			 }
+			 else
+			 var specialLocations =_react2.default.createElement(
+				'div',
+	            null,
+	            _react2.default.createElement(
+	                'h4',
+	                null,
+	                'Your Address:'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                this.props.specialLocations
+				),
+				
+			 );
+
+			 if(this.props.specialInstructions && this.props.specialLocations)
+			 {
+				var confirmed =_react2.default.createElement(
+					_reactRouter.Link,
+					{ to: '/confirmation', className: 'order-summary-link' },
+					_react2.default.createElement(
+						'button',
+						{
+							onClick: this.props.handleOrderSubmit,
+							className: 'next-button order-summary-button' },
+						'Submit Order',
+						_react2.default.createElement('i', { className: 'fa fa-check fa-lg', 'aria-hidden': 'true' })
+					)
+				);
+			 }
 
 				
 	        return _react2.default.createElement(
@@ -62529,6 +62593,8 @@
 						// 	specialInstructions: this.props.specialInstructions
 						//  }),
 						specialInstructions,
+						specialLocations,
+						confirmed,
 	                    // _react2.default.createElement(
 	                    //     _reactRouter.Link,
 	                    //     { to: '/confirmation', className: 'order-summary-link' },
@@ -62551,7 +62617,8 @@
 	                            'Edit my order',
 	                            _react2.default.createElement('i', { className: 'fa fa-pencil fa-lg', 'aria-hidden': 'true' })
 	                        )
-	                    )
+						),
+						
 	                )
 	            ),
 	            _react2.default.createElement(_Footer2.default, null)
@@ -62581,6 +62648,7 @@
 
 	    propTypes: {
 			specialInstructions: _react2.default.PropTypes.string,
+			specialLocations : _react2.default.PropTypes.string,
 
 			
 	    },
@@ -62598,6 +62666,16 @@
 	                'p',
 	                null,
 	                this.props.specialInstructions
+				),
+				_react2.default.createElement(
+	                'h4',
+	                null,
+	                'Your Address:'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                this.props.specialLocations
 	            )
 	        );
 	    }
