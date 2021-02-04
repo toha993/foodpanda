@@ -26029,7 +26029,7 @@
 	        } else {
 	            var expectedPickupTime = '';
 	        }
-			console.log(this.state.specialLocations);
+			//console.log(this.state.specialLocations);
 	        var date = (0, _moment2.default)().format('l');
 	        var time = (0, _moment2.default)().format('LT');
 	        _superagent2.default.post('/api/orders').set('Content-Type', 'application/json').send({
@@ -26121,33 +26121,33 @@
 	        });
 	    },
 
-	    // _handleCCNumber: function _handleCCNumber(event) {
-	    //     var newPaymentInfo = _lodash2.default.assign({}, this.state.paymentInfo, { cardNumber: event.target.value });
-	    //     this.setState({
-	    //         paymentInfo: newPaymentInfo
-	    //     });
-	    // },
+	    _handleCCNumber: function _handleCCNumber(event) {
+	        var newPaymentInfo = _lodash2.default.assign({}, this.state.paymentInfo, { cardNumber: event.target.value });
+	        this.setState({
+	            paymentInfo: newPaymentInfo
+	        });
+	    },
 
-	    // _handleCCExpMonth: function _handleCCExpMonth(event) {
-	    //     var newPaymentInfo = _lodash2.default.assign({}, this.state.paymentInfo, { expMonth: event.target.value });
-	    //     this.setState({
-	    //         paymentInfo: newPaymentInfo
-	    //     });
-	    // },
+	    _handleCCExpMonth: function _handleCCExpMonth(event) {
+	        var newPaymentInfo = _lodash2.default.assign({}, this.state.paymentInfo, { expMonth: event.target.value });
+	        this.setState({
+	            paymentInfo: newPaymentInfo
+	        });
+	    },
 
-	    // _handleCCExpYear: function _handleCCExpYear(event) {
-	    //     var newPaymentInfo = _lodash2.default.assign({}, this.state.paymentInfo, { expYear: event.target.value });
-	    //     this.setState({
-	    //         paymentInfo: newPaymentInfo
-	    //     });
-	    // },
+	    _handleCCExpYear: function _handleCCExpYear(event) {
+	        var newPaymentInfo = _lodash2.default.assign({}, this.state.paymentInfo, { expYear: event.target.value });
+	        this.setState({
+	            paymentInfo: newPaymentInfo
+	        });
+	    },
 
-	    // _handleCCCVV: function _handleCCCVV(event) {
-	    //     var newPaymentInfo = _lodash2.default.assign({}, this.state.paymentInfo, { cvv: event.target.value });
-	    //     this.setState({
-	    //         paymentInfo: newPaymentInfo
-	    //     });
-	    // },
+	    _handleCCCVV: function _handleCCCVV(event) {
+	        var newPaymentInfo = _lodash2.default.assign({}, this.state.paymentInfo, { cvv: event.target.value });
+	        this.setState({
+	            paymentInfo: newPaymentInfo
+	        });
+	    },
 
 	    _toggleAddNotification: function _toggleAddNotification() {
 	        var _this5 = this;
@@ -26418,12 +26418,12 @@
 	                    handleFavorite: this._handleFavorite,
 	                    favorite: this.state.favorite,
 	                    handleCCName: this._handleCCName,
-	                    // handleCCNumber: this._handleCCNumber,
-	                    // handleCCExpMonth: this._handleCCExpMonth,
-	                    // expMonth: this.state.paymentInfo.expMonth,
-	                    // handleCCExpYear: this._handleCCExpYear,
-	                    // expYear: this.state.paymentInfo.expYear,
-	                    // handleCCCVV: this._handleCCCVV,
+	                    handleCCNumber: this._handleCCNumber,
+	                    handleCCExpMonth: this._handleCCExpMonth,
+	                    expMonth: this.state.paymentInfo.expMonth,
+	                    handleCCExpYear: this._handleCCExpYear,
+	                    expYear: this.state.paymentInfo.expYear,
+	                    handleCCCVV: this._handleCCCVV,
 	                    handleOrderSubmit: this._handleOrderSubmit,
 	                    handlePreviousOrders: this._handlePreviousOrders,
 	                    handleFavoriteOrders: this._handleFavoriteOrders,
@@ -59643,17 +59643,24 @@
 			handleSpecialInstructions: _react2.default.PropTypes.func,
 			handleSpecialLocations: _react2.default.PropTypes.func
 	    },
-
 	    render: function render() {
+
+			var demo = _react2.default.createElement(_MenuSection2.default, {
+				data: this.props.data,
+				slug: 'hot-drinks',
+				handleAddItemToOrder: this.props.handleAddItemToOrder,
+				toggleAddNotification: this.props.toggleAddNotification,
+				toggleErrorNotification: this.props.toggleErrorNotification });
 	        return _react2.default.createElement(
 	            'form',
-	            null,
-	            _react2.default.createElement(_MenuSection2.default, {
-	                data: this.props.data,
-	                slug: 'hot-drinks',
-	                handleAddItemToOrder: this.props.handleAddItemToOrder,
-	                toggleAddNotification: this.props.toggleAddNotification,
-	                toggleErrorNotification: this.props.toggleErrorNotification }),
+				null,
+				demo,
+	            // _react2.default.createElement(_MenuSection2.default, {
+	            //     data: this.props.data,
+	            //     slug: 'hot-drinks',
+	            //     handleAddItemToOrder: this.props.handleAddItemToOrder,
+	            //     toggleAddNotification: this.props.toggleAddNotification,
+	            //     toggleErrorNotification: this.props.toggleErrorNotification }),
 	            _react2.default.createElement(_MenuSection2.default, {
 	                data: this.props.data,
 	                slug: 'cold-drinks',
@@ -61124,7 +61131,7 @@
 	                        shops: this.props.shops,
 	                        handleSelectedShop: this.props.handleSelectedShop })
 	                ),
-	                ';'
+	                ' '
 	            ),
 	            _react2.default.createElement(_Footer2.default, null)
 	        );
@@ -61282,12 +61289,13 @@
 	                            'div',
 	                            { className: 'open-now' },
 	                            _react2.default.createElement('i', { className: 'fa fa-clock-o', 'aria-hidden': 'true' }),
-	                            ' Open now!'
+	                            this.props.shop.opening_hours.open_now
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
 	                            { className: 'shop-list-distance' },
-	                            this.props.shop.distance
+								this.props.shop.rating,
+								'⭐'
 	                        )
 	                    )
 	                )
@@ -61704,7 +61712,7 @@
 	            _react2.default.createElement(
 	                'h2',
 	                null,
-	                'Delivey now or schedule pick up?'
+	                'Delivey now or Dine in Later?'
 	            ),
 	            _react2.default.createElement(
 	                'div',
@@ -61727,7 +61735,7 @@
 	                _react2.default.createElement(
 	                    'label',
 	                    null,
-	                    'Pick up at:',
+	                    'Dine in at:',
 	                    _react2.default.createElement(
 	                        'span',
 	                        null,
@@ -61746,76 +61754,7 @@
 	                            { value: 'true', disabled: true },
 	                            'Time'
 	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '5:00am' },
-	                            '5:00am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '5:30am' },
-	                            '5:30am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '6:00am' },
-	                            '6:00am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '6:30am' },
-	                            '6:30am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '7:00am' },
-	                            '7:00am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '7:30am' },
-	                            '7:30am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '8:00am' },
-	                            '8:00am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '8:30am' },
-	                            '8:30am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '9:00am' },
-	                            '9:00am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '9:30am' },
-	                            '9:30am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '10:00am' },
-	                            '10:00am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '10:30am' },
-	                            '10:30am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '11:00am' },
-	                            '11:00am'
-	                        ),
-	                        _react2.default.createElement(
-	                            'option',
-	                            { value: '11:30am' },
-	                            '11:30am'
-	                        ),
+	                        
 	                        _react2.default.createElement(
 	                            'option',
 	                            { value: '12:00pm' },
@@ -61890,7 +61829,27 @@
 	                            'option',
 	                            { value: '7:00pm' },
 	                            '7:00pm'
-	                        )
+							),
+							_react2.default.createElement(
+	                            'option',
+	                            { value: '7:30pm' },
+	                            '7:30pm'
+							),
+							_react2.default.createElement(
+	                            'option',
+	                            { value: '8:00pm' },
+	                            '8:00pm'
+							),
+							_react2.default.createElement(
+	                            'option',
+	                            { value: '8:30pm' },
+	                            '8:30pm'
+							),
+							_react2.default.createElement(
+	                            'option',
+	                            { value: '9:00pm' },
+	                            '9:00pm'
+	                        ),
 	                    )
 	                )
 	            )
@@ -62056,12 +62015,12 @@
 
 	    propTypes: {
 	        handleCCName: _react2.default.PropTypes.func,
-	        // handleCCNumber: _react2.default.PropTypes.func,
-	        // handleCCExpMonth: _react2.default.PropTypes.func,
-	        // expMonthValue: _react2.default.PropTypes.string,
-	        // handleCCExpYear: _react2.default.PropTypes.func,
-	        // expYearValue: _react2.default.PropTypes.string,
-	        // handleCCCVV: _react2.default.PropTypes.func
+	        handleCCNumber: _react2.default.PropTypes.func,
+	        handleCCExpMonth: _react2.default.PropTypes.func,
+	        expMonthValue: _react2.default.PropTypes.string,
+	        handleCCExpYear: _react2.default.PropTypes.func,
+	        expYearValue: _react2.default.PropTypes.string,
+	        handleCCCVV: _react2.default.PropTypes.func
 	    },
 
 	    render: function render() {
@@ -62087,167 +62046,157 @@
 	                    placeholder: 'Name',
 	                    required: true })
 	            ),
-	            // _react2.default.createElement(
-	            //     'div',
-	            //     { className: 'payment-info-section payment-card-number' },
-	            //     _react2.default.createElement(
-	            //         'p',
-	            //         null,
-	            //         'Credit Card Number'
-	            //     ),
-	            //     _react2.default.createElement('input', {
-	            //         onChange: this.props.handleCCNumber,
-	            //         type: 'text',
-	            //         placeholder: 'Card number',
-	            //         maxLength: '16',
-	            //         required: true })
-	            // ),
-	            // _react2.default.createElement(
-	            //     'div',
-	            //     { className: 'payment-info-section payment-month-year' },
-	            //     _react2.default.createElement(
-	            //         'p',
-	            //         null,
-	            //         'Expiration Date'
-	            //     ),
-	            //     _react2.default.createElement(
-	            //         'select',
-	            //         {
-	            //             className: 'payment-month',
-	            //             onChange: this.props.handleCCExpMonth,
-	            //             value: this.props.expMonthValue,
-	            //             name: 'exp-month'
-	            //         },
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: 'default' },
-	            //             'Month'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '01' },
-	            //             'Jan (01)'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '02' },
-	            //             'Feb (02)'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '03' },
-	            //             'Mar (03)'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '04' },
-	            //             'Apr (04)'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '05' },
-	            //             'May (05)'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '06' },
-	            //             'Jun (06)'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '07' },
-	            //             'Jul (07)'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '08' },
-	            //             'Aug (08)'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '09' },
-	            //             'Sep (09)'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '10' },
-	            //             'Oct (10)'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '11' },
-	            //             'Nov (11)'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '12' },
-	            //             'Dec (12)'
-	            //         )
-	            //     ),
-	            //     _react2.default.createElement(
-	            //         'select',
-	            //         {
-	            //             className: 'payment-year',
-	            //             onChange: this.props.handleCCExpYear,
-	            //             value: this.props.expYearValue,
-	            //             name: 'exp-year' },
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: 'default' },
-	            //             'Year'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '2016' },
-	            //             '2016'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '2017' },
-	            //             '2017'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '2018' },
-	            //             '2018'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '2019' },
-	            //             '2019'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '2020' },
-	            //             '2020'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '2021' },
-	            //             '2021'
-	            //         ),
-	            //         _react2.default.createElement(
-	            //             'option',
-	            //             { value: '2022' },
-	            //             '2022'
-	            //         )
-	            //     )
-	            // ),
-	            // _react2.default.createElement(
-	            //     'div',
-	            //     { className: 'payment-info-section payment-csv' },
-	            //     _react2.default.createElement(
-	            //         'p',
-	            //         null,
-	            //         'CSV'
-	            //     ),
-	            //     _react2.default.createElement('input', {
-	            //         onChange: this.props.handleCCCVV,
-	            //         type: 'text',
-	            //         placeholder: 'CSV',
-	            //         maxLength: '3',
-	            //         required: true })
-	            // )
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'payment-info-section payment-card-number' },
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Credit Card Number'
+	                ),
+	                _react2.default.createElement('input', {
+	                    onChange: this.props.handleCCNumber,
+	                    type: 'text',
+	                    placeholder: 'Card number',
+	                    maxLength: '16',
+	                    required: true })
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'payment-info-section payment-month-year' },
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Expiration Date'
+	                ),
+	                _react2.default.createElement(
+	                    'select',
+	                    {
+	                        className: 'payment-month',
+	                        onChange: this.props.handleCCExpMonth,
+	                        value: this.props.expMonthValue,
+	                        name: 'exp-month'
+	                    },
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: 'default' },
+	                        'Month'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '01' },
+	                        'Jan (01)'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '02' },
+	                        'Feb (02)'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '03' },
+	                        'Mar (03)'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '04' },
+	                        'Apr (04)'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '05' },
+	                        'May (05)'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '06' },
+	                        'Jun (06)'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '07' },
+	                        'Jul (07)'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '08' },
+	                        'Aug (08)'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '09' },
+	                        'Sep (09)'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '10' },
+	                        'Oct (10)'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '11' },
+	                        'Nov (11)'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '12' },
+	                        'Dec (12)'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'select',
+	                    {
+	                        className: 'payment-year',
+	                        onChange: this.props.handleCCExpYear,
+	                        value: this.props.expYearValue,
+	                        name: 'exp-year' },
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: 'default' },
+	                        'Year'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '2021' },
+	                        '2021'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '2022' },
+	                        '2022'
+						),
+						_react2.default.createElement(
+	                        'option',
+	                        { value: '2023' },
+	                        '2023'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '2024' },
+	                        '2024'
+	                    ),
+	                    _react2.default.createElement(
+	                        'option',
+	                        { value: '2025' },
+	                        '2025'
+	                    )		
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'payment-info-section payment-csv' },
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'CSV'
+	                ),
+	                _react2.default.createElement('input', {
+	                    onChange: this.props.handleCCCVV,
+	                    type: 'text',
+	                    placeholder: 'CSV',
+	                    maxLength: '3',
+	                    required: true })
+	            )
 	        );
 	    }
 	});
@@ -62838,7 +62787,8 @@
 	                        { className: 'confirmation-success' },
 	                        _react2.default.createElement('i', { className: 'fa fa-check-circle fa-5x', 'aria-hidden': 'true' })
 	                    )
-	                ),
+					),
+					console.log(this.props.duration),
 	                _react2.default.createElement(_OrderReadyTime2.default, {
 	                    methodOfTrans: this.props.methodOfTrans,
 	                    pickupTime: this.props.pickupTime,
@@ -62903,8 +62853,9 @@
 	                _react2.default.createElement(
 	                    'h2',
 	                    { className: 'order-ready-time-pickup' },
-	                    'Head to the shop, and your order will be ready when you get there!'
-	                )
+						'You will receive the food within ',
+						this.props.duration
+					)
 	            );
 	        } else {
 	            pickupTime = _react2.default.createElement(
@@ -63023,7 +62974,7 @@
 	            _react2.default.createElement(
 	                'p',
 	                null,
-	                selectedShop.distance
+	                this.props.distance
 	            )
 	        );
 	    }
@@ -63346,12 +63297,16 @@
 
 
 	    render: function render() {
-
+			var totalcost = 0;
 	        var previousOrderItems = this.props.previousOrder.items.map(function (item, index) {
-	            return _react2.default.createElement(_PreviousOrderItem2.default, {
-	                previousOrderItem: item,
+				totalcost +=item.price*item.quantity;
+				totalcost += totalcost*0.1;
+				totalcost=totalcost.toFixed(2);
+				
+				return _react2.default.createElement(_PreviousOrderItem2.default, {
+	                previousOrderItem: item,	
 	                key: index });
-	        });
+			});
 
 	        return _react2.default.createElement(
 	            'div',
@@ -63370,7 +63325,14 @@
 	                'p',
 	                null,
 	                'Your Contact Number: ',
-	                this.props.previousOrder.specialInstructions
+					this.props.previousOrder.specialInstructions,
+					' ',
+				),
+				_react2.default.createElement(
+	                'p',
+	                null,
+	                'Your Cost was : ',
+					totalcost
 	            )
 	        );
 	    }
@@ -63656,7 +63618,7 @@
 			"name": "Kebab Garden",
 			"distance": "0.1 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "12PM-10PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -63670,7 +63632,7 @@
 			],
 			"place_id": "ChIJUWIa6CpVUDcRegr07gpIZOg",
 			"price_level": 1,
-			"rating": 4.1,
+			"rating": 4.2,
 			"reference": "CmRSAAAAKto8w-MUc3NBILgyZdAxBlPueV2EC-CnuHXfZxjPYjbnjilES7ZpC0WsuW3GKbn9IfteViuQfQRJpyAFyTeqH8eGtYjJQBUti0Ge9neJeqpu4O0yjUEbftqvPzJj6PJZEhANGT3ThZ7f_JeDYOzFd7t5GhTuvVqvo3BpknjxOzlZXvz34CNblA",
 			"scope": "GOOGLE",
 			"types": [
@@ -63702,7 +63664,7 @@
 			"name": "The Mad Grill",
 			"distance": "0.1 mi",
 			"opening_hours": {
-				"open_now": true,
+				"open_now": "12:30PM–11PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -63748,7 +63710,7 @@
 			"name": "Cupstory",
 			"distance": "0.2 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "11AM–10PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -63792,7 +63754,7 @@
 			"name": "Artisan Coffee Co.",
 			"distance": "0.2 mi",
 			"opening_hours": {
-				"open_now": true,
+				"open_now": "11AM–10PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -63837,10 +63799,10 @@
 			},
 			"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
 			"id": "2d0b4ef360b34aceb9ed2b3ae3651a58bde7bfbe",
-			"name": "//Randhon Kabbo Restaurant",
+			"name": "Woondaal King Kabab",
 			"distance": "0.3 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "11AM–11PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -63852,9 +63814,9 @@
 					"width": 4032
 				}
 			],
-			"place_id": "ChIJQRc56K7_UDcRZsBAeQueD0g",
+			"place_id": "ChIJ0ZM5ftVUUDcRakg8AIy02LE",
 			"price_level": 2,
-			"rating": 4.5,
+			"rating": 4.1,
 			"reference": "CmRSAAAAZ_C75UwaKezfUybvy5t2jUA7Y8JlsIiyRvv-FmOZsm6WdSN-Rk4nr7hN6KJRtDZ9goMIWiqMPsLWcveYQAw5q_ppIObd8d7cskB4NDa4Sz_eAfvyyqgHdil1OmmQZjnyEhAv_QbmUarwbR8Hc5dsffRCGhR3ziwCdBkZVrFuzAM_ryMk9H9tSA",
 			"scope": "GOOGLE",
 			"types": [
@@ -63864,7 +63826,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "270 7th Street, San Francisco",
+			"vicinity": "East Zindabazar, Baruthkhana Rd, Sylhet 3100",
 			"html_attributions": []
 		},
 		{
@@ -63885,7 +63847,7 @@
 			"name": "Cremo Coffee",
 			"distance": "0.4 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "11AM–11PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -63899,7 +63861,7 @@
 			],
 			"place_id": "ChIJowibtQFVUDcRKx-DaFBKBpY",
 			"price_level": 2,
-			"rating": 4.5,
+			"rating": 4.0,
 			"reference": "CmRSAAAAYDkIvqoPe0RlPM73A50CDrnTrgbnuSjJvQOoscjx6UGzeRpHm4MojVxjGvh2jGrnediKrgG277TKnrE4EVKhoAv-KEAGA7gfoRpi1Z1Ayx-oTVZjbChZAbKF4QBEvvB6EhA8XzBL0228ZWwIchO-v98vGhTPVMRRApyHS4mbRmacdRD8LbheYw",
 			"scope": "GOOGLE",
 			"types": [
@@ -63911,7 +63873,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "1746 Post Street, San Francisco",
+			"vicinity": "Nayasarak Rd, Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -63932,7 +63894,7 @@
 			"name": "Sip Coffee",
 			"distance": "0.44 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "11AM–11PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -63946,7 +63908,7 @@
 			],
 			"place_id": "ChIJDbcwp9ZUUDcRnFo9tLv2UqI",
 			"price_level": 1,
-			"rating": 4.4,
+			"rating": 4.3,
 			"reference": "CmRSAAAAS_2INWhSssteMj_mpDOlGrXFQSqLhlrwBifrEincsjF5ZCcx5-kHIw6QLlrkzw5rmpmIGIfXzyAfCTOOsBFWqK4J_j0WsNvRAfdmDjyr9tmgmpDYgJrJOi7HGpaEsQiOEhAJPBp36XAf0IGecJcbNDi4GhTjQqZHbPF2NK7BIU_W1aHeU6g2iw",
 			"scope": "GOOGLE",
 			"types": [
@@ -63956,7 +63918,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "66 Mint Street, San Francisco",
+			"vicinity": "Nayasarak Mission Rd, Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -63977,7 +63939,7 @@
 			"name": "Dhakaiya Fast Food",
 			"distance": "0.5 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "11.30AM–11PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -63991,7 +63953,7 @@
 			],
 			"place_id": "ChIJBb3WFuBVUDcRjU5R2sP13a8",
 			"price_level": 1,
-			"rating": 4.1,
+			"rating": 3.6,
 			"reference": "CmRRAAAA7N4mp23Dy_Uo0h65LfMQAlFAASuhv4GyL6uZQxzsqfWSGtozKVCyfl42tw4MfLfc1z3WoQo0dnejYopirc4rnSnqhzGWggPMcpg_p0saO6iOqcp0vuwRwgGhDY9uJ-bqEhCE5WSpWuPplIXRtsQyAmZUGhTQ5l9PIwsebXeg4-BSJDOKDy3rqQ",
 			"scope": "GOOGLE",
 			"types": [
@@ -64004,7 +63966,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "685 4th Street, San Francisco",
+			"vicinity": "Shop:04, Level:04, Ambarkhana Rd, Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -64025,7 +63987,7 @@
 			"name": "Kabab Karigor",
 			"distance": "0.5 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "12PM–11PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64039,7 +64001,7 @@
 			],
 			"place_id": "ChIJy6kpRtJVUDcRVGxc_8KcTm0",
 			"price_level": 1,
-			"rating": 4.1,
+			"rating": 4.3,
 			"reference": "CmRRAAAAvF-cDT57TXQ4GPkDysLX2fpHtEuCokemmQMOxe8-WSSfI9WFBzjbtO5Gaty2xxBESiAKyQ5XU4WdiDwS8q9tCK8T3yiKE_mFP1JPaa8qsCZNO8uvzPUh-Ebv9OAPyK-IEhCSyQ12znfyfUzPqcjOZbjCGhRIYQStHl7_mGD0jB8B_G1OGQXRDQ",
 			"scope": "GOOGLE",
 			"types": [
@@ -64051,7 +64013,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "845 Market Street #201, San Francisco",
+			"vicinity": "Nahar Tower Nayasarak Rd",
 			"html_attributions": []
 		},
 		{
@@ -64072,7 +64034,7 @@
 			"name": "Panshi Resturant",
 			"distance": "0.7 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "5AM–11.59PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64086,7 +64048,7 @@
 			],
 			"place_id": "ChIJGaXRDStVUDcRKECOQjJ7ETo",
 			"price_level": 1,
-			"rating": 4.5,
+			"rating": 4.3,
 			"reference": "CmRSAAAAVLciJvPwQXDk-jZNFm8Vs6LxyMAZUfG0kpzfJ-x32osI973g45q_YsBzdcs5nh9GjleGGOZoMIIOKEHxesxsub13LT3VLU8ngdqSjqJqL4XT7UYPEedmQXExwn4sZaZiEhB0l9JilCLpMEYRdkG3LlAGGhRaMyLi0X4HBy5MQ4DVm1D3JQ5n0Q",
 			"scope": "GOOGLE",
 			"types": [
@@ -64096,7 +64058,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "375 Valencia Street, San Francisco",
+			"vicinity": "Jallarpar Rd Zindabazar",
 			"html_attributions": []
 		},
 		{
@@ -64117,7 +64079,7 @@
 			"name": "Himur Bhojon Bilash",
 			"distance": "0.7 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "10.30AM–10.30PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64131,7 +64093,7 @@
 			],
 			"place_id": "ChIJV2dwVV9VUDcRBL6yTvvE-hQ",
 			"price_level": 2,
-			"rating": 4.3,
+			"rating": 3.6,
 			"reference": "CmRSAAAAkpFZYoDg7o3SL6KzHT9rhITdr6xlk8KJpm90pQ_xVyNnCAsTPdxqtUgBarTLHf7NjPP6DlNeStJyALaSKFqBn-I0R71oYUSkvMKnZkXsPc0yuYP-_5HLKzbHBljYkUdiEhBWk68BM6gBNnr5avg7H-HyGhT9asD_3w-UR2mt2uc3jXO9AF83tQ",
 			"scope": "GOOGLE",
 			"types": [
@@ -64140,7 +64102,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "730 Howard Street, San Francisco",
+			"vicinity": "Kumargaon Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -64161,7 +64123,7 @@
 			"name": "The Taco Bell Sylhet",
 			"distance": "0.7 mi",
 			"opening_hours": {
-				"open_now": true,
+				"open_now": "10AM-11PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64175,7 +64137,7 @@
 			],
 			"place_id": "ChIJ75ZAtWNVUDcRQQ2bvySt5MY",
 			"price_level": 1,
-			"rating": 4.2,
+			"rating": 4.6,
 			"reference": "CmRSAAAATCnI6jkjGq09fKEdMArXl-SMwpsjaoBo2lYyxWGyCJSzbKsmJRNiJANhVYb01cY_jTbXy025hcOlsUlJ7qVH3IBq5S2-lOxy1TRBY8MyPJWVQYw5IDzxd1ApwH3VreZhEhAUmVKT7DunTXAqjPfxHL0zGhRUybD3k5vLiZs08TIGiR68Qe7nmA",
 			"scope": "GOOGLE",
 			"types": [
@@ -64186,7 +64148,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "599 Post Street, San Francisco",
+			"vicinity": "Kazi Asparagus Food Island, East, Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -64207,7 +64169,7 @@
 			"name": "Ferdousy's Cake",
 			"distance": "0.8 mi",
 			"opening_hours": {
-				"open_now": true,
+				"open_now": "11AM-10PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64221,7 +64183,7 @@
 			],
 			"place_id": "ChIJM-6sRtNUUDcRw4uvsHiruq4",
 			"price_level": 2,
-			"rating": 4.2,
+			"rating": 4.4,
 			"reference": "CmRRAAAANaBfSWn6HJ8EoZxwRceXCCXMYy3mIkWSuU28H82BArZ0XyZ0R3TH6mO2Lt_PxjGm3ESyNYfSEb1HaD1beJmQmlKUVqJxOkYCyrBILn7RxIycv2HdoZMYb4rhGe_OX1AeEhAsjKdFHmzybTRfcDB4kQTBGhR9RKSxYgpMVyExUFZgDSFyzqLKag",
 			"scope": "GOOGLE",
 			"types": [
@@ -64231,7 +64193,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "3595 California Street, San Francisco",
+			"vicinity": "Habib's Bhaban, Dhupadighir Par E, Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -64252,7 +64214,7 @@
 			"name": "Grill Hub Sylhet",
 			"distance": "0.9 mi",
 			"opening_hours": {
-				"open_now": true,
+				"open_now": "10AM-9.45PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64265,7 +64227,7 @@
 				}
 			],
 			"place_id": "ChIJVYMRi21VUDcRlyJLms-KQgs",
-			"rating": 4.1,
+			"rating": 3.0,
 			"reference": "CmRSAAAABOMgDNVIcY8--nx-Drs2ckTGv9uKO442sBG_ypeeqspyYA6vEpN5OHct-1Gr5Oo2otNceSIzg4JdfkgBJpG4t72f7puuwWXMkn-Lh8q7kNx37wNzv8pa9FxC8GXsatKcEhCMiMBxcp95Ylb6IljFNresGhTrArd_pdNbmongrnikyuB8ei3ExA",
 			"scope": "GOOGLE",
 			"types": [
@@ -64275,7 +64237,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "1265 Battery Street, San Francisco",
+			"vicinity": "MC Collage 2nd Gate, Tilagor - Ambarkhana Road, Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -64296,7 +64258,7 @@
 			"name": "Chaat Buzz",
 			"distance": "1.1 mi",
 			"opening_hours": {
-				"open_now": true,
+				"open_now": "12.30PM-10PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64309,7 +64271,7 @@
 				}
 			],
 			"place_id": "ChIJlxZjV7JUUDcRBaYBdnNtyT8",
-			"rating": 4.3,
+			"rating": 4.0,
 			"reference": "CmRRAAAA8w3hMlpqshrdFiJC97qZnQDDLeEPwxfFBuh79Rj7NrR0v4EInGWNi281v79KgHjSeM1Sondl8gZRtkBe3eSXlAAxd_IRK_nvFtEt9kcmzJ2HEBDFVBZlbkKbMI8ncxjcEhD5GHOvDfKDRlm8IpKwVaOGGhTf2MsqTAw--QyZHLuXUrHv3udi4w",
 			"scope": "GOOGLE",
 			"types": [
@@ -64321,7 +64283,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "Baker's Hall, 160 Jefferson Street, SF",
+			"vicinity": "Dreamers' House, 2 Vatatikor, Tilagor Tamabil Rd, Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -64342,7 +64304,7 @@
 			"name": "Saffron Restaurant",
 			"distance": "1.1 mi",
 			"opening_hours": {
-				"open_now": true,
+				"open_now": "5AM-12AM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64356,7 +64318,7 @@
 			],
 			"place_id": "ChIJezjXC01VUDcRUWebX44bFcE",
 			"price_level": 2,
-			"rating": 3.7,
+			"rating": 3.9,
 			"reference": "CmRSAAAAknzK4gb7SBpkC2AkM15tGuSjNmNgBJQq1UAFSlKYpYSLJvZGrwA5DLnJQdTRf8xZ95s1-zkaSqmZKTCpRGQiJ2juIJovK31pBRJkXmtFSun5bKWzNX6HGr4udWRYkFmHEhAmOVUSTPq47HTGYTnIJHiIGhSBgwwZgCqx_AZ0KdRK6qSsRGuy9Q",
 			"scope": "GOOGLE",
 			"types": [
@@ -64367,7 +64329,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "256 Pier 39, San Francisco",
+			"vicinity": "Sonar Para Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -64388,7 +64350,7 @@
 			"name": "Foodholic",
 			"distance": "1.3 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "12.30PM-10.30PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64402,7 +64364,7 @@
 			],
 			"place_id": "ChIJm6qTku5VUDcR7RuCZgV7Xt4",
 			"price_level": 2,
-			"rating": 3.2,
+			"rating": 4.2,
 			"reference": "CmRRAAAAp6WE5dsWVSSDruXjHX-g5RoEIMnLoeW2XP1rdQZmHKNfUoXnI8CdVwAME21rGGvDCr01sqwbwRXMdcR8wtp6KgwHX3Z6zX7K_pIRpfo-QO-gmKmNpmLdBWk1ycsjEesGEhBYfLVQLoR-IEap6faZJjFxGhSCi8xZzpnZTB1uA2E134dixPg4Rg",
 			"scope": "GOOGLE",
 			"types": [
@@ -64412,7 +64374,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "455 Market Street #100, San Francisco",
+			"vicinity": "Sheikhpara Street, Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -64433,7 +64395,7 @@
 			"name": "Dobarien Vai",
 			"distance": "1.4 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "10AM-11PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64447,7 +64409,7 @@
 			],
 			"place_id": "ChIJZ2eeoeVVUDcRujrrDHHtTNY",
 			"price_level": 1,
-			"rating": 4.5,
+			"rating": "Not Rated",
 			"reference": "CmRRAAAAN3-ZbQHAH1dkgQjKT9Z5sMfB4cTQchd-Tgw4l56obq6vgg1u_ST5pbxbhTPetPQ_kP1DX6OwDumiHdpgbcXiuZNU5YCiFTIO5OHcOf8SXnHTZZ__GdqlEssE1av6SxKVEhBcuvkGrkK6PUTY-YwmRgywGhTzyotO6PKylJbWasqTrU1tY0hCpQ",
 			"scope": "GOOGLE",
 			"types": [
@@ -64457,7 +64419,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "530 North Point Street, San Francisco",
+			"vicinity": "10, Hannan Monzil, 1 Dhaka - Sylhet Hwy, Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -64478,7 +64440,7 @@
 			"name": "Chakhum",
 			"distance": "1.5 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "10AM-11PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64492,7 +64454,7 @@
 			],
 			"place_id": "ChIJKwGY06VVUDcRGZHTm_gx-8M",
 			"price_level": 1,
-			"rating": 3.8,
+			"rating": 5,
 			"reference": "CmRSAAAARHSfHlIkei4OAndIeJ_6bjYu61_Ppsf3qFfJogONYdzPejh9zd7-HXK2PcGZFnNDK1s1_IdHfWnLhAYzTGeP8z-xjYMlCp00h9-6KgIxiHIrrGcWo48c7jg_8LAjwAvMEhBD6XKzZupQ_zqkVNrqCaWSGhQOZlju-b76SfiVc2phZln9pBDf7Q",
 			"scope": "GOOGLE",
 			"types": [
@@ -64503,7 +64465,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "McKesson Plaza, 1 Post Street, San Francisco",
+			"vicinity": "Mazumder Para Sylhet",
 			"html_attributions": []
 		},
 		{
@@ -64524,7 +64486,7 @@
 			"name": "Red House",
 			"distance": "1.7 mi",
 			"opening_hours": {
-				"open_now": false,
+				"open_now": "10AM-10PM",
 				"weekday_text": []
 			},
 			"photos": [
@@ -64538,7 +64500,7 @@
 			],
 			"place_id": "ChIJs7IVNNRVUDcRTxaa4lEOoWU",
 			"price_level": 1,
-			"rating": 4.5,
+			"rating": 3.7,
 			"reference": "CmRSAAAAx8waVbvErVTwGdozSdrvHj8DTE2cQlNdt7Y9ue9DsaSdM3xyAzqw1ztr4C8nkE3bAy3rKBjZcxJ-GbDH-g5YkD7QoX1jKM-S8xofv2EK7nbl4I3qZkxAD1bZJNwKHUxLEhDthUR9fQK66sUivwL17BhSGhS72-W25K2eGsTlwoFPQkDGQlaAjg",
 			"scope": "GOOGLE",
 			"types": [
@@ -64551,7 +64513,7 @@
 				"point_of_interest",
 				"establishment"
 			],
-			"vicinity": "746 Valencia Street, San Francisco",
+			"vicinity": "Manikpir Road, Sylhet 3100",
 			"html_attributions": []
 		}
 	];

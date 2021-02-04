@@ -27650,7 +27650,9 @@
 	            );
 			}
 			if(this.props.order.timeSelectedForPickup==="true")
-				this.props.order.timeSelectedForPickup=this.props.order.time;
+				this.props.order.timeSelectedForPickup= "Delivery Now";
+			else
+				this.props.order.timeSelectedForPickup= "Dine in at "+this.props.order.timeSelectedForPickup
 			//console.log(this.props.order.time);
 
 			//console.log(this.props.order.payment);
@@ -27683,9 +27685,9 @@
 							null,
 							'Customer: ',
 							this.props.order.username,
-							'; Ordered:',
+							'; Ordered At:',
 							this.props.order.time,
-							'; Pickup- ',
+							'; Order Type- ',
 							this.props.order.timeSelectedForPickup,
 							' ',
 							
