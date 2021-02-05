@@ -27659,7 +27659,7 @@
 			var cost = _react2.default.createElement(
 				'div',
 				{ className: 'special-instructions' },
-				'Total Cost: $',
+				'Total Cost: ৳',
 				totalcost,
 				' ',
 				

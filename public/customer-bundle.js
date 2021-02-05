@@ -26099,11 +26099,11 @@
 	        });
 	        if (newValue === true) {
 	            this.setState({
-	                methodOfTransShow: true
+	                methodOfTransShow: false
 	            });
 	        } else if (newValue !== true) {
 	            this.setState({
-	                methodOfTransShow: false
+	                methodOfTransShow: true
 	            });
 	        }
 	    },
@@ -26457,7 +26457,7 @@
 						"items": [
 							{
 								"name": "Latte",
-								"price": 2.95,
+								"price": 120,
 								"options": [
 									"milkType",
 									"size",
@@ -26468,7 +26468,7 @@
 							},
 							{
 								"name": "Americano",
-								"price": 2.5,
+								"price": 150,
 								"options": [
 									"size",
 									"quantity",
@@ -26478,7 +26478,7 @@
 							},
 							{
 								"name": "Cappucino",
-								"price": 3.05,
+								"price": 140,
 								"options": [
 									"milkType",
 									"size",
@@ -26489,7 +26489,7 @@
 							},
 							{
 								"name": "Espresso",
-								"price": 2.5,
+								"price": 180,
 								"options": [
 									"milkType",
 									"size",
@@ -26500,7 +26500,7 @@
 							},
 							{
 								"name": "Macchiato",
-								"price": 3.5,
+								"price": 200,
 								"options": [
 									"milkType",
 									"size",
@@ -26517,7 +26517,7 @@
 						"items": [
 							{
 								"name": "Iced Latte",
-								"price": 2.95,
+								"price": 160,
 								"options": [
 									"milkType",
 									"size",
@@ -26528,7 +26528,7 @@
 							},
 							{
 								"name": "Iced Mocha",
-								"price": 2.5,
+								"price": 180,
 								"options": [
 									"milkType",
 									"size",
@@ -26539,7 +26539,7 @@
 							},
 							{
 								"name": "Iced Chai",
-								"price": 3.05,
+								"price": 140,
 								"options": [
 									"milkType",
 									"size",
@@ -26550,7 +26550,7 @@
 							},
 							{
 								"name": "Iced Coffee",
-								"price": 2.5,
+								"price": 150,
 								"options": [
 									"milkType",
 									"size",
@@ -26561,7 +26561,7 @@
 							},
 							{
 								"name": "Frappe",
-								"price": 3.5,
+								"price": 220,
 								"options": [
 									"milkType",
 									"size",
@@ -26578,7 +26578,7 @@
 						"items": [
 							{
 								"name": "Green",
-								"price": 2.95,
+								"price": 80,
 								"options": [
 									"size",
 									"quantity",
@@ -26588,7 +26588,7 @@
 							},
 							{
 								"name": "Jasmine Green",
-								"price": 2.5,
+								"price": 120,
 								"options": [
 									"size",
 									"quantity",
@@ -26598,7 +26598,7 @@
 							},
 							{
 								"name": "Chai",
-								"price": 3.05,
+								"price": 100,
 								"options": [
 									"size",
 									"quantity",
@@ -26608,7 +26608,7 @@
 							},
 							{
 								"name": "Mint",
-								"price": 2.5,
+								"price": 140,
 								"options": [
 									"size",
 									"quantity",
@@ -26618,7 +26618,7 @@
 							},
 							{
 								"name": "Chamomile",
-								"price": 3.5,
+								"price": 120,
 								"options": [
 									"size",
 									"quantity",
@@ -26634,7 +26634,7 @@
 						"items": [
 							{
 								"name": "Croissant",
-								"price": 2.95,
+								"price": 220,
 								"options": [
 									"quantity"
 								],
@@ -26642,7 +26642,7 @@
 							},
 							{
 								"name": "Banana Muffin",
-								"price": 2.5,
+								"price": 280,
 								"options": [
 									"quantity"
 								],
@@ -26650,7 +26650,7 @@
 							},
 							{
 								"name": "Blueberry Scone",
-								"price": 3.05,
+								"price": 320,
 								"options": [
 									"quantity"
 								],
@@ -26658,7 +26658,7 @@
 							},
 							{
 								"name": "Carrot Cake",
-								"price": 2.5,
+								"price": 350,
 								"options": [
 									"quantity"
 								],
@@ -26666,938 +26666,245 @@
 							},
 							{
 								"name": "Home-Made Cookies",
-								"price": 3.5,
+								"price": 240,
 								"options": [
 									"quantity"
 								],
 								"id": "home-made-cookies"
 							}
 						]
-					}
-				]
-			},
-			{
-				"name": "beanscene",
-				"address": "255 Alvera St. Los Angeles, CA 98654",
-				"phone": "(818) 438-9832",
-				"imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Inside_the_Coffee_Shop,_Parliament_House,_Dolgellau_-_geograph.org.uk_-_1708041.jpg",
-				"menu": [
+					},
 					{
-						"displayName": "Hot Drinks",
-						"slug": "hot-drinks",
+						"displayName": "Kebab",
+						"slug": "kebab",
 						"items": [
 							{
-								"name": "Latte",
-								"price": 2.95,
+								"name": "Tandoori Chicken",
+								"price": 220,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "latte"
+								"id": "tandoori-chicken"
 							},
 							{
-								"name": "Americano",
-								"price": 2.5,
+								"name": "Hariyali Kebab",
+								"price": 250,
 								"options": [
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "americano"
+								"id": "hariyali-kebab"
 							},
 							{
-								"name": "Cappucino",
-								"price": 3.05,
+								"name": "Chicken Tikka Kebab",
+								"price": 280,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "cappucino"
+								"id": "chicken-tikka-kebab"
 							},
 							{
-								"name": "Espresso",
-								"price": 2.5,
+								"name": "Reshmi Kebab",
+								"price": 300,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "espresso"
+								"id": "reshmi-kebab"
 							},
 							{
-								"name": "Macchiato",
-								"price": 3.5,
+								"name": "Mixed Kebab",
+								"price": 320,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "macchiato"
+								"id": "mixed-kebab"
 							}
 						]
 					},
 					{
-						"displayName": "Cold Drinks",
-						"slug": "cold-drinks",
+						"displayName": "Biriyani",
+						"slug": "biriyani",
 						"items": [
 							{
-								"name": "Iced Latte",
-								"price": 2.95,
+								"name": "Chicken Biriyani",
+								"price": 180,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "iced-latte"
+								"id": "chicken-biriyani"
 							},
 							{
-								"name": "Iced Mocha",
-								"price": 2.5,
+								"name": "Beef Biriyani",
+								"price": 220,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "iced-mocha"
+								"id": "beef-biriyani"
 							},
 							{
-								"name": "Iced Chai",
-								"price": 3.05,
+								"name": "Pigeon Biriyani",
+								"price": 250,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "iced-chai"
+								"id": "pigeon-biriyani"
 							},
 							{
-								"name": "Iced Coffee",
-								"price": 2.5,
+								"name": "Mutton Biriyani",
+								"price": 280,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": ""
+								"id": "mutton-biriyani"
 							},
 							{
-								"name": "Frappe",
-								"price": 3.5,
+								"name": "Kachchi Biriyani",
+								"price": 300,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "frappe"
+								"id": "kacchi-biriyani"
 							}
 						]
 					},
 					{
-						"displayName": "Tea",
-						"slug": "tea",
+						"displayName": "Meat",
+						"slug": "meat",
 						"items": [
 							{
-								"name": "Green",
-								"price": 2.95,
+								"name": "Chicken With Vat & Dal",
+								"price": 100,
 								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
+									"quantity"
 								],
-								"id": "green"
+								"id": "chicken"
 							},
 							{
-								"name": "Jasmine Green",
-								"price": 2.5,
+								"name": "Beef With Vat & Dal",
+								"price": 140,
 								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
+									"quantity"
 								],
-								"id": "jasmine-green"
+								"id": "beef"
 							},
 							{
-								"name": "Chai",
-								"price": 3.05,
+								"name": "Koel With Vat & Dal",
+								"price": 120,
 								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
+									"quantity"
 								],
-								"id": "chai"
+								"id": "koel"
 							},
 							{
-								"name": "Mint",
-								"price": 2.5,
+								"name": "Mutton With Vat & Dal",
+								"price": 180,
 								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
+									"quantity"
 								],
-								"id": "mint"
+								"id": "mutton"
 							},
 							{
-								"name": "Chamomile",
-								"price": 3.5,
+								"name": "Pigeon With Vat & Dal",
+								"price": 160,
 								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
+									"quantity"
 								],
-								"id": "chamomile"
+								"id": "pigeon"
 							}
 						]
 					},
 					{
-						"displayName": "Bakery",
-						"slug": "bakery",
+						"displayName": "Naan",
+						"slug": "naan",
 						"items": [
 							{
-								"name": "Croissant",
-								"price": 2.95,
+								"name": "Butter Naan",
+								"price": 50,
 								"options": [
 									"quantity"
 								],
-								"id": "croissant"
+								"id": "butter-naan"
 							},
 							{
-								"name": "Banana Muffin",
-								"price": 2.5,
+								"name": "Keema Naan",
+								"price": 80,
 								"options": [
 									"quantity"
 								],
-								"id": "banana-muffin"
+								"id": "keema-naan"
 							},
 							{
-								"name": "Blueberry Scone",
-								"price": 3.05,
+								"name": "Plain Naan",
+								"price": 30,
 								"options": [
 									"quantity"
 								],
-								"id": "blueberry-scone"
+								"id": "plain-naan"
 							},
 							{
-								"name": "Carrot Cake",
-								"price": 2.5,
+								"name": "Masala Naan",
+								"price": 60,
 								"options": [
 									"quantity"
 								],
-								"id": "carrot-cake"
+								"id": "masala-naan"
 							},
 							{
-								"name": "Home-Made Cookies",
-								"price": 3.5,
+								"name": "Garlic Naan",
+								"price": 70,
 								"options": [
 									"quantity"
 								],
-								"id": "home-made-cookies"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "tifa",
-				"address": "6785 Huntington St. Venice, CA 90233",
-				"phone": "(818) 438-9832",
-				"imageUrl": "https://cdn1.vox-cdn.com/thumbor/D7jAbLqhca3vAJ20SbXyJH_Dv3I=/0x120:960x840/800x600/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/45736528/compass_coffee.0.0.jpg",
-				"menu": [
-					{
-						"displayName": "Hot Drinks",
-						"slug": "hot-drinks",
-						"items": [
-							{
-								"name": "Latte",
-								"price": 2.95,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "latte"
-							},
-							{
-								"name": "Americano",
-								"price": 2.5,
-								"options": [
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "americano"
-							},
-							{
-								"name": "Cappucino",
-								"price": 3.05,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "cappucino"
-							},
-							{
-								"name": "Espresso",
-								"price": 2.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "espresso"
-							},
-							{
-								"name": "Macchiato",
-								"price": 3.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "macchiato"
+								"id": "garlic-naan"
 							}
 						]
 					},
 					{
-						"displayName": "Cold Drinks",
-						"slug": "cold-drinks",
+						"displayName": "Beverage",
+						"slug": "beverage",
 						"items": [
 							{
-								"name": "Iced Latte",
-								"price": 2.95,
+								"name": "Mineral 500 ML",
+								"price": 20,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "iced-latte"
+								"id": "minaral-water-500"
 							},
 							{
-								"name": "Iced Mocha",
-								"price": 2.5,
+								"name": "Mineral 1500 ML",
+								"price": 35,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "iced-mocha"
+								"id": "mineral-water-1500"
 							},
 							{
-								"name": "Iced Chai",
-								"price": 3.05,
+								"name": "Fanta 500 ML",
+								"price": 35,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "iced-chai"
+								"id": "fanta"
 							},
 							{
-								"name": "Iced Coffee",
-								"price": 2.5,
+								"name": "Pepsi 500 ML",
+								"price": 30,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": ""
+								"id": "pepsi"
 							},
 							{
-								"name": "Frappe",
-								"price": 3.5,
+								"name": "Sprite 500 ML",
+								"price": 30,
 								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
+									"quantity"
 								],
-								"id": "frappe"
+								"id": "sprite"
 							}
 						]
 					},
-					{
-						"displayName": "Tea",
-						"slug": "tea",
-						"items": [
-							{
-								"name": "Green",
-								"price": 2.95,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "green"
-							},
-							{
-								"name": "Jasmine Green",
-								"price": 2.5,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "jasmine-green"
-							},
-							{
-								"name": "Chai",
-								"price": 3.05,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "chai"
-							},
-							{
-								"name": "Mint",
-								"price": 2.5,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "mint"
-							},
-							{
-								"name": "Chamomile",
-								"price": 3.5,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "chamomile"
-							}
-						]
-					},
-					{
-						"displayName": "Bakery",
-						"slug": "bakery",
-						"items": [
-							{
-								"name": "Croissant",
-								"price": 2.95,
-								"options": [
-									"quantity"
-								],
-								"id": "croissant"
-							},
-							{
-								"name": "Banana Muffin",
-								"price": 2.5,
-								"options": [
-									"quantity"
-								],
-								"id": "banana-muffin"
-							},
-							{
-								"name": "Blueberry Scone",
-								"price": 3.05,
-								"options": [
-									"quantity"
-								],
-								"id": "blueberry-scone"
-							},
-							{
-								"name": "Carrot Cake",
-								"price": 2.5,
-								"options": [
-									"quantity"
-								],
-								"id": "carrot-cake"
-							},
-							{
-								"name": "Home-Made Cookies",
-								"price": 3.5,
-								"options": [
-									"quantity"
-								],
-								"id": "home-made-cookies"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "coffeeBean",
-				"address": "2433 Soju st. Venice, CA 90235",
-				"phone": "(818) 438-9832",
-				"imageUrl": "http://cdn.offtrackplanet.com/legacy/uploads/2010/08/coffee.jpg",
-				"menu": [
-					{
-						"displayName": "Hot Drinks",
-						"slug": "hot-drinks",
-						"items": [
-							{
-								"name": "Latte",
-								"price": 2.95,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "latte"
-							},
-							{
-								"name": "Americano",
-								"price": 2.5,
-								"options": [
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "americano"
-							},
-							{
-								"name": "Cappucino",
-								"price": 3.05,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "cappucino"
-							},
-							{
-								"name": "Espresso",
-								"price": 2.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "espresso"
-							},
-							{
-								"name": "Macchiato",
-								"price": 3.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "macchiato"
-							}
-						]
-					},
-					{
-						"displayName": "Cold Drinks",
-						"slug": "cold-drinks",
-						"items": [
-							{
-								"name": "Iced Latte",
-								"price": 2.95,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "iced-latte"
-							},
-							{
-								"name": "Iced Mocha",
-								"price": 2.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "iced-mocha"
-							},
-							{
-								"name": "Iced Chai",
-								"price": 3.05,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "iced-chai"
-							},
-							{
-								"name": "Iced Coffee",
-								"price": 2.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": ""
-							},
-							{
-								"name": "Frappe",
-								"price": 3.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "frappe"
-							}
-						]
-					},
-					{
-						"displayName": "Tea",
-						"slug": "tea",
-						"items": [
-							{
-								"name": "Green",
-								"price": 2.95,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "green"
-							},
-							{
-								"name": "Jasmine Green",
-								"price": 2.5,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "jasmine-green"
-							},
-							{
-								"name": "Chai",
-								"price": 3.05,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "chai"
-							},
-							{
-								"name": "Mint",
-								"price": 2.5,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "mint"
-							},
-							{
-								"name": "Chamomile",
-								"price": 3.5,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "chamomile"
-							}
-						]
-					},
-					{
-						"displayName": "Bakery",
-						"slug": "bakery",
-						"items": [
-							{
-								"name": "Croissant",
-								"price": 2.95,
-								"options": [
-									"quantity"
-								],
-								"id": "croissant"
-							},
-							{
-								"name": "Banana Muffin",
-								"price": 2.5,
-								"options": [
-									"quantity"
-								],
-								"id": "banana-muffin"
-							},
-							{
-								"name": "Blueberry Scone",
-								"price": 3.05,
-								"options": [
-									"quantity"
-								],
-								"id": "blueberry-scone"
-							},
-							{
-								"name": "Carrot Cake",
-								"price": 2.5,
-								"options": [
-									"quantity"
-								],
-								"id": "carrot-cake"
-							},
-							{
-								"name": "Home-Made Cookies",
-								"price": 3.5,
-								"options": [
-									"quantity"
-								],
-								"id": "home-made-cookies"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "pizaaa",
-				"address": "123 4th St. Santa Monica, CA 90234",
-				"phone": "(818) 438-9832",
-				"imageUrl": "http://www.fodors.com/ee/files/slideshows/9-colectivo-coffee.jpg",
-				"menu": [
-					{
-						"displayName": "Hot Drinks",
-						"slug": "hot-drinks",
-						"items": [
-							{
-								"name": "Latte",
-								"price": 2.95,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "latte"
-							},
-							{
-								"name": "Americano",
-								"price": 2.5,
-								"options": [
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "americano"
-							},
-							{
-								"name": "Cappucino",
-								"price": 3.05,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "cappucino"
-							},
-							{
-								"name": "Espresso",
-								"price": 2.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "espresso"
-							},
-							{
-								"name": "Macchiato",
-								"price": 3.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "macchiato"
-							}
-						]
-					},
-					{
-						"displayName": "Cold Drinks",
-						"slug": "cold-drinks",
-						"items": [
-							{
-								"name": "Iced Latte",
-								"price": 2.95,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "iced-latte"
-							},
-							{
-								"name": "Iced Mocha",
-								"price": 2.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "iced-mocha"
-							},
-							{
-								"name": "Iced Chai",
-								"price": 3.05,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "iced-chai"
-							},
-							{
-								"name": "Iced Coffee",
-								"price": 2.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": ""
-							},
-							{
-								"name": "Frappe",
-								"price": 3.5,
-								"options": [
-									"milkType",
-									"size",
-									"quantity",
-									"decaf"
-								],
-								"id": "frappe"
-							}
-						]
-					},
-					{
-						"displayName": "Tea",
-						"slug": "tea",
-						"items": [
-							{
-								"name": "Green",
-								"price": 2.95,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "green"
-							},
-							{
-								"name": "Jasmine Green",
-								"price": 2.5,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "jasmine-green"
-							},
-							{
-								"name": "Chai",
-								"price": 3.05,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "chai"
-							},
-							{
-								"name": "Mint",
-								"price": 2.5,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "mint"
-							},
-							{
-								"name": "Chamomile",
-								"price": 3.5,
-								"options": [
-									"size",
-									"quantity",
-									"hotOrCold"
-								],
-								"id": "chamomile"
-							}
-						]
-					},
-					{
-						"displayName": "Bakery",
-						"slug": "bakery",
-						"items": [
-							{
-								"name": "Croissant",
-								"price": 2.95,
-								"options": [
-									"quantity"
-								],
-								"id": "croissant"
-							},
-							{
-								"name": "Banana Muffin",
-								"price": 2.5,
-								"options": [
-									"quantity"
-								],
-								"id": "banana-muffin"
-							},
-							{
-								"name": "Blueberry Scone",
-								"price": 3.05,
-								"options": [
-									"quantity"
-								],
-								"id": "blueberry-scone"
-							},
-							{
-								"name": "Carrot Cake",
-								"price": 2.5,
-								"options": [
-									"quantity"
-								],
-								"id": "carrot-cake"
-							},
-							{
-								"name": "Home-Made Cookies",
-								"price": 3.5,
-								"options": [
-									"quantity"
-								],
-								"id": "home-made-cookies"
-							}
-						]
-					}
+
 				]
 			}
 		]
@@ -43196,7 +42503,7 @@
 	        var request = {
 	            location: currentLocation,
 	            radius: '4000',
-	            types: ['cafe']
+	           // types: ['cafe']
 			};
 			
 	        // Create the PlaceService and send the request.
@@ -59588,6 +58895,7 @@
 	                    'div',
 	                    { className: 'menu-form-container' },
 	                    _react2.default.createElement(_MenuFormContainer2.default, {
+							selectedShop : this.props.selectedShop,
 	                        data: this.props.data,
 	                        handleSpecialInstructions: this.props.handleSpecialInstructions,
 	                        handleAddItemToOrder: this.props.handleAddItemToOrder,
@@ -59627,6 +58935,10 @@
 
 	var _MenuSection2 = _interopRequireDefault(_MenuSection);
 
+	var _ShopDetails = __webpack_require__(431);
+
+	var _ShopDetails2 = _interopRequireDefault(_ShopDetails);
+
 	__webpack_require__(375);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -59636,7 +58948,8 @@
 
 
 	    propTypes: {
-	        data: _react2.default.PropTypes.object,
+			data: _react2.default.PropTypes.object,
+			selectedShop: _react2.default.PropTypes.object,
 	        handleAddItemToOrder: _react2.default.PropTypes.func,
 	        toggleAddNotification: _react2.default.PropTypes.func,
 	        toggleErrorNotification: _react2.default.PropTypes.func,
@@ -59644,47 +58957,89 @@
 			handleSpecialLocations: _react2.default.PropTypes.func
 	    },
 	    render: function render() {
+			var type;
+			var name = this.props.selectedShop.name;
+			console.log(name);
+			if ((name === 'Cupstory') ||(name ===  'Artisan Coffee Co.' )|| (name === "Cremo Coffee") || (name === "Sip Coffee") || (name === "The Taco Bell Sylhet") || (name === "Grill Hub Sylhet") || (name === "Dobarien Vai") || (name === "Chakhum"))
+				type="cafe";
+			else
+				type = "basic";
 
-			var demo = _react2.default.createElement(_MenuSection2.default, {
+			console.log(type);
+
+
+			var cafe1,cafe2,cafe3,cafe4,basic1,basic2,basic3,basic4,basic5;
+			if(type ==="cafe")
+			{ 
+				cafe1 = _react2.default.createElement(_MenuSection2.default, {
 				data: this.props.data,
 				slug: 'hot-drinks',
 				handleAddItemToOrder: this.props.handleAddItemToOrder,
 				toggleAddNotification: this.props.toggleAddNotification,
 				toggleErrorNotification: this.props.toggleErrorNotification });
-	        return _react2.default.createElement(
-	            'form',
-				null,
-				demo,
-	            // _react2.default.createElement(_MenuSection2.default, {
-	            //     data: this.props.data,
-	            //     slug: 'hot-drinks',
-	            //     handleAddItemToOrder: this.props.handleAddItemToOrder,
-	            //     toggleAddNotification: this.props.toggleAddNotification,
-	            //     toggleErrorNotification: this.props.toggleErrorNotification }),
-	            _react2.default.createElement(_MenuSection2.default, {
+
+				cafe2 = _react2.default.createElement(_MenuSection2.default, {
 	                data: this.props.data,
 	                slug: 'cold-drinks',
 	                handleAddItemToOrder: this.props.handleAddItemToOrder,
 	                toggleAddNotification: this.props.toggleAddNotification,
-	                toggleErrorNotification: this.props.toggleErrorNotification }),
-	            _react2.default.createElement(_MenuSection2.default, {
+					toggleErrorNotification: this.props.toggleErrorNotification });
+
+				cafe3 = _react2.default.createElement(_MenuSection2.default, {
 	                data: this.props.data,
 	                slug: 'tea',
 	                handleAddItemToOrder: this.props.handleAddItemToOrder,
 	                toggleAddNotification: this.props.toggleAddNotification,
-					toggleErrorNotification: this.props.toggleErrorNotification }),
-				_react2.default.createElement(_MenuSection2.default, {
-						data: this.props.data,
-						slug: 'tea',
-						handleAddItemToOrder: this.props.handleAddItemToOrder,
-						toggleAddNotification: this.props.toggleAddNotification,
-						toggleErrorNotification: this.props.toggleErrorNotification }),
-	            _react2.default.createElement(_MenuSection2.default, {
+					toggleErrorNotification: this.props.toggleErrorNotification });
+				
+				cafe4 =  _react2.default.createElement(_MenuSection2.default, {
 	                data: this.props.data,
 	                slug: 'bakery',
 	                handleAddItemToOrder: this.props.handleAddItemToOrder,
 	                toggleAddNotification: this.props.toggleAddNotification,
-	                toggleErrorNotification: this.props.toggleErrorNotification })
+	                toggleErrorNotification: this.props.toggleErrorNotification });
+			}
+			else
+			{
+				basic1 =_react2.default.createElement(_MenuSection2.default, {
+					data: this.props.data,
+					slug: 'beverage',
+					handleAddItemToOrder: this.props.handleAddItemToOrder,
+					toggleAddNotification: this.props.toggleAddNotification,
+					toggleErrorNotification: this.props.toggleErrorNotification });
+			 basic2 = _react2.default.createElement(_MenuSection2.default, {
+						data: this.props.data,
+						slug: 'naan',
+						handleAddItemToOrder: this.props.handleAddItemToOrder,
+						toggleAddNotification: this.props.toggleAddNotification,
+						toggleErrorNotification: this.props.toggleErrorNotification });
+			basic3 = _react2.default.createElement(_MenuSection2.default, {
+							data: this.props.data,
+							slug: 'meat',
+							handleAddItemToOrder: this.props.handleAddItemToOrder,
+							toggleAddNotification: this.props.toggleAddNotification,
+							toggleErrorNotification: this.props.toggleErrorNotification });
+			basic4 = _react2.default.createElement(_MenuSection2.default, {
+								data: this.props.data,
+								slug: 'biriyani',
+								handleAddItemToOrder: this.props.handleAddItemToOrder,
+								toggleAddNotification: this.props.toggleAddNotification,
+								toggleErrorNotification: this.props.toggleErrorNotification });
+			basic5 = _react2.default.createElement(_MenuSection2.default, {
+				data: this.props.data,
+				slug: 'kebab',
+				handleAddItemToOrder: this.props.handleAddItemToOrder,
+				toggleAddNotification: this.props.toggleAddNotification,
+				toggleErrorNotification: this.props.toggleErrorNotification });
+			}
+	        return _react2.default.createElement(
+	            'form',
+				null,
+				cafe1,cafe2,cafe3,cafe4,basic2,basic3,basic4,basic5,basic1
+	            
+				
+	            
+	           
 	        );
 	    }
 	});
@@ -59929,8 +59284,8 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'item-price' },
-	                    '$',
-	                    this.props.price.toFixed(2)
+	                    '৳',
+	                    this.props.price
 	                )
 	            ),
 	            _react2.default.createElement(
@@ -60241,6 +59596,16 @@
 	                'option',
 	                { value: '5' },
 	                '5'
+				),
+				_react2.default.createElement(
+	                'option',
+	                { value: '6' },
+	                '6'
+				),
+				_react2.default.createElement(
+	                'option',
+	                { value: '7' },
+	                '7'
 	            )
 	        );
 	    }
@@ -60638,7 +60003,7 @@
 	            _react2.default.createElement(
 	                'td',
 	                { className: 'td-price' },
-	                '$',
+	                '৳',
 	                (price * quantity).toFixed(2),
 	                _react2.default.createElement(
 	                    'span',
@@ -60729,7 +60094,7 @@
 	            _react2.default.createElement(
 	                'td',
 	                null,
-	                '$',
+	                '৳',
 	                this.props.orderTax.toFixed(2)
 	            )
 	        );
@@ -60813,7 +60178,7 @@
 	            _react2.default.createElement(
 	                'td',
 	                null,
-	                '$',
+	                '৳',
 	                this.props.orderTotal
 	            )
 	        );
@@ -61082,7 +60447,8 @@
 	            loadingIcon = _react2.default.createElement('i', { className: 'hide fa-spinner fa-spin fa-3x fa-fw margin-bottom' });
 	        }
 
-	        var content;
+			var content;
+			//console.log(this.state.selectedShop)
 	        // if (!this.props.notification.userLocation) {
 	        //     content = <div>
 	        //                 <div className="loading-icon">{loadingIcon}</div>
@@ -61129,7 +60495,9 @@
 	                    ),
 	                    _react2.default.createElement(_ShopList2.default, {
 	                        shops: this.props.shops,
-	                        handleSelectedShop: this.props.handleSelectedShop })
+							handleSelectedShop: this.props.handleSelectedShop,
+							
+						 })
 	                ),
 	                ' '
 	            ),
@@ -61459,7 +60827,7 @@
 	    render: function render() {
 
 	        var nextButton;
-	        if (this.props.pickupTime === true && this.props.methodOfTrans) {
+	        if (this.props.pickupTime !== true && this.props.methodOfTrans) {
 	            nextButton = _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: '/order-summary' },
@@ -61470,7 +60838,7 @@
 	                    _react2.default.createElement('i', { className: 'fa fa-arrow-right fa-lg', 'aria-hidden': 'true' })
 	                )
 	            );
-	        } else if (this.props.pickupTime !== true) {
+	        } else if (this.props.pickupTime === true) {
 	            nextButton = _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: '/order-summary' },
@@ -61523,7 +60891,7 @@
 	                        value: this.props.pickupTime || true }),
 	                    _react2.default.createElement(_SelectMethodOfTrans2.default, {
 	                        handleMethodOfTrans: this.props.handleMethodOfTrans,
-	                        methodOfTransShow: this.props.methodOfTransShow || true }),
+	                        methodOfTransShow: this.props.methodOfTransShow }),
 	                    _react2.default.createElement(_SelectIfFavorite2.default, {
 	                        handleFavorite: this.props.handleFavorite,
 	                        value: this.props.favorite || false }),
@@ -62946,7 +62314,9 @@
 
 	    render: function render() {
 
-	        var selectedShop = this.props.selectedShop;
+			var selectedShop = this.props.selectedShop;
+			
+			console.log(this.props.selectedShop);
 
 	        return _react2.default.createElement(
 	            'div',
@@ -63331,7 +62701,7 @@
 				_react2.default.createElement(
 	                'p',
 	                null,
-	                'Your Cost was : ',
+	                'Your Cost was : ৳',
 					totalcost
 	            )
 	        );
@@ -63635,14 +63005,9 @@
 			"rating": 4.2,
 			"reference": "CmRSAAAAKto8w-MUc3NBILgyZdAxBlPueV2EC-CnuHXfZxjPYjbnjilES7ZpC0WsuW3GKbn9IfteViuQfQRJpyAFyTeqH8eGtYjJQBUti0Ge9neJeqpu4O0yjUEbftqvPzJj6PJZEhANGT3ThZ7f_JeDYOzFd7t5GhTuvVqvo3BpknjxOzlZXvz34CNblA",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"bakery",
-				"store",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic"
+			,
 			"vicinity": "Al-Amin Complex,Zindabazar,Sylhet-3100",
 			"html_attributions": []
 		},
@@ -63681,14 +63046,9 @@
 			"rating": 4.3,
 			"reference": "CmRRAAAAi_TxE-0M0EgsJpLRt5cndugU6unPBffd522_RBhtWWaan4bJBq1sadCwa06-dZw2c1kp3zp9lVKBdXJJ9hT_yknAGBK5sUbb-T75hvBMb8FE_GDljiRfjlfG2_lpkAz8EhARkZUFTBvfMSHIWXzW12OwGhRSiFH8Mrws_x5nfwMhb4kSAYs4IQ",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"bar",
-				"restaurant",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic"
+			,
 			"vicinity": "Nayasarak Point, Manik Pir Road, 3100",
 			"html_attributions": []
 		},
@@ -63727,12 +63087,9 @@
 			"rating": 4.3,
 			"reference": "CmRSAAAA7K_5nRGYud46_3k37OF6_ZzPfh09ogJKslAjYwXRVO6qh-qRCB8eLu-wxv3lieWKtA_DkNkcEgADYbT6O9QMAl0Gs-vswklCz_SynW-fAs-WSJqcxh7GHakA26D3AuJpEhDY8SKGoq488-4PcEjLwzazGhTfbodsZj7hLa9bNYshix48ewUMSQ",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"cafe"
+			,
 			"vicinity": "Manik Prirer Tila Rd, Sylhet",
 			"html_attributions": []
 		},
@@ -63771,16 +63128,9 @@
 			"rating": 4.2,
 			"reference": "CmRRAAAAg2KklEto9yPpdA_mj-Gcl63QxVuiSCFjYreVV40JCXC4w8_slx7oGhqp6nlYKWTLydfB9BJlAvvC9uTlA5rBWMBnCU4SbhvsfHzGM3KOtYZVZi4v-TBtwxS5hhEKYUmQEhAeR2RFwgsyZtTJCmIQImoeGhRQiym2DLONyZ5EwhpEg48kWM5vXA",
 			"scope": "GOOGLE",
-			"types": [
-				"night_club",
-				"cafe",
-				"bar",
-				"store",
-				"restaurant",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"cafe"
+			,
 			"vicinity": "39/A Kumarpara Rd, Sylhet 3100",
 			"html_attributions": []
 		},
@@ -63819,13 +63169,9 @@
 			"rating": 4.1,
 			"reference": "CmRSAAAAZ_C75UwaKezfUybvy5t2jUA7Y8JlsIiyRvv-FmOZsm6WdSN-Rk4nr7hN6KJRtDZ9goMIWiqMPsLWcveYQAw5q_ppIObd8d7cskB4NDa4Sz_eAfvyyqgHdil1OmmQZjnyEhAv_QbmUarwbR8Hc5dsffRCGhR3ziwCdBkZVrFuzAM_ryMk9H9tSA",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"store",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic"
+			,
 			"vicinity": "East Zindabazar, Baruthkhana Rd, Sylhet 3100",
 			"html_attributions": []
 		},
@@ -63864,15 +63210,10 @@
 			"rating": 4.0,
 			"reference": "CmRSAAAAYDkIvqoPe0RlPM73A50CDrnTrgbnuSjJvQOoscjx6UGzeRpHm4MojVxjGvh2jGrnediKrgG277TKnrE4EVKhoAv-KEAGA7gfoRpi1Z1Ayx-oTVZjbChZAbKF4QBEvvB6EhA8XzBL0228ZWwIchO-v98vGhTPVMRRApyHS4mbRmacdRD8LbheYw",
 			"scope": "GOOGLE",
-			"types": [
-				"movie_theater",
-				"cafe",
-				"clothing_store",
-				"store",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"cafe"
+				
+			,
 			"vicinity": "Nayasarak Rd, Sylhet",
 			"html_attributions": []
 		},
@@ -63911,13 +63252,9 @@
 			"rating": 4.3,
 			"reference": "CmRSAAAAS_2INWhSssteMj_mpDOlGrXFQSqLhlrwBifrEincsjF5ZCcx5-kHIw6QLlrkzw5rmpmIGIfXzyAfCTOOsBFWqK4J_j0WsNvRAfdmDjyr9tmgmpDYgJrJOi7HGpaEsQiOEhAJPBp36XAf0IGecJcbNDi4GhTjQqZHbPF2NK7BIU_W1aHeU6g2iw",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"store",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"cafe"
+			,
 			"vicinity": "Nayasarak Mission Rd, Sylhet",
 			"html_attributions": []
 		},
@@ -63956,16 +63293,9 @@
 			"rating": 3.6,
 			"reference": "CmRRAAAA7N4mp23Dy_Uo0h65LfMQAlFAASuhv4GyL6uZQxzsqfWSGtozKVCyfl42tw4MfLfc1z3WoQo0dnejYopirc4rnSnqhzGWggPMcpg_p0saO6iOqcp0vuwRwgGhDY9uJ-bqEhCE5WSpWuPplIXRtsQyAmZUGhTQ5l9PIwsebXeg4-BSJDOKDy3rqQ",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"bar",
-				"meal_takeaway",
-				"store",
-				"restaurant",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic"
+			,
 			"vicinity": "Shop:04, Level:04, Ambarkhana Rd, Sylhet",
 			"html_attributions": []
 		},
@@ -64004,15 +63334,9 @@
 			"rating": 4.3,
 			"reference": "CmRRAAAAvF-cDT57TXQ4GPkDysLX2fpHtEuCokemmQMOxe8-WSSfI9WFBzjbtO5Gaty2xxBESiAKyQ5XU4WdiDwS8q9tCK8T3yiKE_mFP1JPaa8qsCZNO8uvzPUh-Ebv9OAPyK-IEhCSyQ12znfyfUzPqcjOZbjCGhRIYQStHl7_mGD0jB8B_G1OGQXRDQ",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"bakery",
-				"store",
-				"restaurant",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic",
+			
 			"vicinity": "Nahar Tower Nayasarak Rd",
 			"html_attributions": []
 		},
@@ -64051,13 +63375,9 @@
 			"rating": 4.3,
 			"reference": "CmRSAAAAVLciJvPwQXDk-jZNFm8Vs6LxyMAZUfG0kpzfJ-x32osI973g45q_YsBzdcs5nh9GjleGGOZoMIIOKEHxesxsub13LT3VLU8ngdqSjqJqL4XT7UYPEedmQXExwn4sZaZiEhB0l9JilCLpMEYRdkG3LlAGGhRaMyLi0X4HBy5MQ4DVm1D3JQ5n0Q",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"store",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic"
+			,
 			"vicinity": "Jallarpar Rd Zindabazar",
 			"html_attributions": []
 		},
@@ -64096,12 +63416,9 @@
 			"rating": 3.6,
 			"reference": "CmRSAAAAkpFZYoDg7o3SL6KzHT9rhITdr6xlk8KJpm90pQ_xVyNnCAsTPdxqtUgBarTLHf7NjPP6DlNeStJyALaSKFqBn-I0R71oYUSkvMKnZkXsPc0yuYP-_5HLKzbHBljYkUdiEhBWk68BM6gBNnr5avg7H-HyGhT9asD_3w-UR2mt2uc3jXO9AF83tQ",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic"
+			,
 			"vicinity": "Kumargaon Sylhet",
 			"html_attributions": []
 		},
@@ -64140,14 +63457,9 @@
 			"rating": 4.6,
 			"reference": "CmRSAAAATCnI6jkjGq09fKEdMArXl-SMwpsjaoBo2lYyxWGyCJSzbKsmJRNiJANhVYb01cY_jTbXy025hcOlsUlJ7qVH3IBq5S2-lOxy1TRBY8MyPJWVQYw5IDzxd1ApwH3VreZhEhAUmVKT7DunTXAqjPfxHL0zGhRUybD3k5vLiZs08TIGiR68Qe7nmA",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"store",
-				"restaurant",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"cafe"
+			,
 			"vicinity": "Kazi Asparagus Food Island, East, Sylhet",
 			"html_attributions": []
 		},
@@ -64186,13 +63498,9 @@
 			"rating": 4.4,
 			"reference": "CmRRAAAANaBfSWn6HJ8EoZxwRceXCCXMYy3mIkWSuU28H82BArZ0XyZ0R3TH6mO2Lt_PxjGm3ESyNYfSEb1HaD1beJmQmlKUVqJxOkYCyrBILn7RxIycv2HdoZMYb4rhGe_OX1AeEhAsjKdFHmzybTRfcDB4kQTBGhR9RKSxYgpMVyExUFZgDSFyzqLKag",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"store",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic"
+			,
 			"vicinity": "Habib's Bhaban, Dhupadighir Par E, Sylhet",
 			"html_attributions": []
 		},
@@ -64230,13 +63538,9 @@
 			"rating": 3.0,
 			"reference": "CmRSAAAABOMgDNVIcY8--nx-Drs2ckTGv9uKO442sBG_ypeeqspyYA6vEpN5OHct-1Gr5Oo2otNceSIzg4JdfkgBJpG4t72f7puuwWXMkn-Lh8q7kNx37wNzv8pa9FxC8GXsatKcEhCMiMBxcp95Ylb6IljFNresGhTrArd_pdNbmongrnikyuB8ei3ExA",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"restaurant",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"cafe"
+			,
 			"vicinity": "MC Collage 2nd Gate, Tilagor - Ambarkhana Road, Sylhet",
 			"html_attributions": []
 		},
@@ -64274,15 +63578,9 @@
 			"rating": 4.0,
 			"reference": "CmRRAAAA8w3hMlpqshrdFiJC97qZnQDDLeEPwxfFBuh79Rj7NrR0v4EInGWNi281v79KgHjSeM1Sondl8gZRtkBe3eSXlAAxd_IRK_nvFtEt9kcmzJ2HEBDFVBZlbkKbMI8ncxjcEhD5GHOvDfKDRlm8IpKwVaOGGhTf2MsqTAw--QyZHLuXUrHv3udi4w",
 			"scope": "GOOGLE",
-			"types": [
-				"bakery",
-				"cafe",
-				"store",
-				"restaurant",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic"
+			,
 			"vicinity": "Dreamers' House, 2 Vatatikor, Tilagor Tamabil Rd, Sylhet",
 			"html_attributions": []
 		},
@@ -64321,14 +63619,10 @@
 			"rating": 3.9,
 			"reference": "CmRSAAAAknzK4gb7SBpkC2AkM15tGuSjNmNgBJQq1UAFSlKYpYSLJvZGrwA5DLnJQdTRf8xZ95s1-zkaSqmZKTCpRGQiJ2juIJovK31pBRJkXmtFSun5bKWzNX6HGr4udWRYkFmHEhAmOVUSTPq47HTGYTnIJHiIGhSBgwwZgCqx_AZ0KdRK6qSsRGuy9Q",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"bar",
-				"restaurant",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic"
+				
+			,
 			"vicinity": "Sonar Para Sylhet",
 			"html_attributions": []
 		},
@@ -64367,13 +63661,10 @@
 			"rating": 4.2,
 			"reference": "CmRRAAAAp6WE5dsWVSSDruXjHX-g5RoEIMnLoeW2XP1rdQZmHKNfUoXnI8CdVwAME21rGGvDCr01sqwbwRXMdcR8wtp6KgwHX3Z6zX7K_pIRpfo-QO-gmKmNpmLdBWk1ycsjEesGEhBYfLVQLoR-IEap6faZJjFxGhSCi8xZzpnZTB1uA2E134dixPg4Rg",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"store",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic"
+				
+			,
 			"vicinity": "Sheikhpara Street, Sylhet",
 			"html_attributions": []
 		},
@@ -64412,13 +63703,9 @@
 			"rating": "Not Rated",
 			"reference": "CmRRAAAAN3-ZbQHAH1dkgQjKT9Z5sMfB4cTQchd-Tgw4l56obq6vgg1u_ST5pbxbhTPetPQ_kP1DX6OwDumiHdpgbcXiuZNU5YCiFTIO5OHcOf8SXnHTZZ__GdqlEssE1av6SxKVEhBcuvkGrkK6PUTY-YwmRgywGhTzyotO6PKylJbWasqTrU1tY0hCpQ",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"restaurant",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"cafe"
+			,
 			"vicinity": "10, Hannan Monzil, 1 Dhaka - Sylhet Hwy, Sylhet",
 			"html_attributions": []
 		},
@@ -64457,14 +63744,9 @@
 			"rating": 5,
 			"reference": "CmRSAAAARHSfHlIkei4OAndIeJ_6bjYu61_Ppsf3qFfJogONYdzPejh9zd7-HXK2PcGZFnNDK1s1_IdHfWnLhAYzTGeP8z-xjYMlCp00h9-6KgIxiHIrrGcWo48c7jg_8LAjwAvMEhBD6XKzZupQ_zqkVNrqCaWSGhQOZlju-b76SfiVc2phZln9pBDf7Q",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"bakery",
-				"store",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"cafe"
+			,
 			"vicinity": "Mazumder Para Sylhet",
 			"html_attributions": []
 		},
@@ -64503,16 +63785,9 @@
 			"rating": 3.7,
 			"reference": "CmRSAAAAx8waVbvErVTwGdozSdrvHj8DTE2cQlNdt7Y9ue9DsaSdM3xyAzqw1ztr4C8nkE3bAy3rKBjZcxJ-GbDH-g5YkD7QoX1jKM-S8xofv2EK7nbl4I3qZkxAD1bZJNwKHUxLEhDthUR9fQK66sUivwL17BhSGhS72-W25K2eGsTlwoFPQkDGQlaAjg",
 			"scope": "GOOGLE",
-			"types": [
-				"cafe",
-				"bakery",
-				"meal_takeaway",
-				"store",
-				"restaurant",
-				"food",
-				"point_of_interest",
-				"establishment"
-			],
+			"type": 
+				"basic"
+			,
 			"vicinity": "Manikpir Road, Sylhet 3100",
 			"html_attributions": []
 		}
