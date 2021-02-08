@@ -27591,11 +27591,11 @@
 			totalcost += totalcost*0.1;
 			totalcost=totalcost.toFixed(2);
             let selectedrider,selectedriderphone;
-            let riders = [["Abdul Alim","Kebab Garden","01767564312"],["Arifur Rahman","The Mad Grill","01543678945"],["Jamilur Rahman","Cupstory","01654123987"],["Samin Alam","Artisan Coffee Co.","01776456123"],["Shakirul Hasan","Woondaal King Kabab","01578983087"],["Safiuzzaman","Cremo Coffee","01578654234"],["rahimg","Blue Bottle Coffee"],["Arman Ur Rahman","Sip Coffee","01787985678"],["Abdur Rouf","Dhakaiya Fast Food","01876451298"],["Wahid Alam","Kabab Karigor","01987451459"],["Jaber Islam","Panshi Resturant","01889763458"],["Abid Alam","Himur Bhojon Bilash","01675231672"],["Niladri Saha","The Taco Bell Sylhet","01678456765"],["Abdullah Fahim","Ferdousy's Cake","01551443322"],["Injamam Ur Rashid","Chaat Buzz","01765897612"],["Mazharul Islam","Grill Hub Sylhet","01876315623"],["Shifat Alam","Saffron Restaurant","01756993344"],["Emon Bhuiyan","Foodholic","01969495629"],["Rumi Zaman","Dobarien Vai","01987564534"],["Alfez Alam","Chakhum","01657970983"],["Rahim Ali","Red House","01678341555"]];
+            let riders = [["Abdul Alim","Kebab Garden","01767564312"],["Arifur Rahman","The Mad Grill","01543678945"],["Jamilur Rahman","Cupstory","01654123987"],["Samin Alam","Artisan Coffee Co.","01776456123"],["Shakirul Hasan","Woondaal King Kabab","01578983087"],["Safiuzzaman","Cremo Coffee","01578654234"],["rahimg","Blue Bottle Coffee"],["Arman Ur Rahman","Sip Coffee","01787985678"],["Abdur Rouf","Dhakaiya Fast Food","01876451298"],["Wahid Alam","Kabab Karigor","01987451459"],["Jaber Islam","Panshi Restaurant","01889763458"],["Abid Alam","Himur Bhojon Bilash","01675231672"],["Niladri Saha","The Taco Bell Sylhet","01678456765"],["Abdullah Fahim","Ferdousy's Cake","01551443322"],["Injamam Ur Rashid","Chaat Buzz","01765897612"],["Mazharul Islam","Grill Hub Sylhet","01876315623"],["Shifat Alam","Saffron Restaurant","01756993344"],["Emon Bhuiyan","Foodholic","01969495629"],["Rumi Zaman","Dobarien Vai","01987564534"],["Alfez Alam","Chakhum","01657970983"],["Rahim Ali","Red House","01678341555"]];
             let i;
             for(i =0;i<riders.length;i++)
             { 
-                // console.log(this.props.order.selectedShop);
+                console.log(this.props.order.selectedShop);
                // console.log(riders.length);
                 //console.log(this.props.order.selectedShop===riders[i][1]);
 

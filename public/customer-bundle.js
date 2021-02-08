@@ -27174,7 +27174,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'landing-icon landing-icon-1' },
-	                    _react2.default.createElement('img', { src: '/img/landing-icon-1.png' }),
+	                    _react2.default.createElement('img', { src: '/1.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
@@ -27184,7 +27184,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'landing-icon landing-icon-2' },
-	                    _react2.default.createElement('img', { src: '/img/landing-icon-2.png' }),
+	                    _react2.default.createElement('img', { src: '/11.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
@@ -27194,11 +27194,21 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'landing-icon landing-icon-3' },
-	                    _react2.default.createElement('img', { src: '/img/landing-icon-3.png' }),
+	                    _react2.default.createElement('img', { src: '/5.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
 	                        'Ready when you arrive!'
+	                    )
+					),
+					_react2.default.createElement(
+	                    'div',
+	                    { className: 'landing-icon landing-icon-3' },
+	                    _react2.default.createElement('img', { src: '/8.png' }),
+	                    _react2.default.createElement(
+	                        'h2',
+	                        null,
+	                        'Or Get Delivery!'
 	                    )
 	                )
 	            ),
@@ -27219,10 +27229,10 @@
 	                    null,
 	                    'As Used By'
 	                ),
-	                _react2.default.createElement('img', { src: 'img/pizaaa.png' }),
-	                _react2.default.createElement('img', { src: 'img/blue-bottle.png' }),
-	                _react2.default.createElement('img', { src: 'img/philz.png' }),
-	                _react2.default.createElement('img', { src: 'img/peets.png' })
+	                _react2.default.createElement('img', { src: 'kebab.png' }),
+	                _react2.default.createElement('img', { src: 'cremo.png' }),
+	                _react2.default.createElement('img', { src: 'food.png' }),
+	                _react2.default.createElement('img', { src: 'redhouse.png' })
 	            ),
 	            _react2.default.createElement(_Footer2.default, null)
 	        );
@@ -58708,7 +58718,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'dash-landing-icon dash-landing-icon-1' },
-	                    _react2.default.createElement('img', { src: '/img/landing-icon-1.png' }),
+	                    _react2.default.createElement('img', { src: '/1.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
@@ -58718,7 +58728,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'dash-landing-icon dash-landing-icon-2' },
-	                    _react2.default.createElement('img', { src: '/img/landing-icon-2.png' }),
+	                    _react2.default.createElement('img', { src: '/11.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
@@ -58728,11 +58738,21 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'dash-landing-icon dash-landing-icon-3' },
-	                    _react2.default.createElement('img', { src: '/img/landing-icon-3.png' }),
+	                    _react2.default.createElement('img', { src: '5.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
 	                        'Ready when you arrive!'
+	                    )
+					),
+					_react2.default.createElement(
+	                    'div',
+	                    { className: 'dash-landing-icon dash-landing-icon-3' },
+	                    _react2.default.createElement('img', { src: '8.png' }),
+	                    _react2.default.createElement(
+	                        'h2',
+	                        null,
+	                        'Or Get Deliver!'
 	                    )
 	                )
 	            ),
@@ -62317,7 +62337,7 @@
 			var selectedShop = this.props.selectedShop;
 			
 			console.log(this.props.selectedShop);
-
+			console.log(this.props.distance);
 	        return _react2.default.createElement(
 	            'div',
 	            { className: 'shop-details-container' },
