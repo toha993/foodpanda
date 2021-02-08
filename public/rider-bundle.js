@@ -26928,8 +26928,9 @@
 	    },
 
 	    componentWillMount: function componentWillMount() {
-	        this.props.fetchOrders();
-	        setInterval(this.props.fetchOrders, 5000);
+			this.props.fetchOrders();
+			this.props.completeOrders;
+	        setInterval(this.props.fetchOrders, 4000);
 	    },
 
 	    render: function render() {
@@ -27595,7 +27596,7 @@
             let i;
             for(i =0;i<riders.length;i++)
             { 
-                console.log(this.props.order.selectedShop);
+               // console.log(this.props.order.selectedShop);
                // console.log(riders.length);
                 //console.log(this.props.order.selectedShop===riders[i][1]);
 
@@ -27603,8 +27604,6 @@
                    {
                      selectedrider=riders[i][0];
                      selectedriderphone = riders[i][2];
-                     //console.log(this.props.order.selectedShop);
-                     //console.log(riders[i][1]);
                     break;
                    }
             }
@@ -27658,7 +27657,7 @@
                              '\n',
                              '     Contact: ',
 							 selectedriderphone,
-							 '     Resturant: ',
+							 '     Restaurant: ',
 							this.props.order.selectedShop
 
 	                    ),

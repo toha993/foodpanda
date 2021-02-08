@@ -27598,7 +27598,6 @@
 	    },
 
 	    _handleCompleteOrder: function _handleCompleteOrder() {
-			let totalcost = 0;
 			console.log('completing order');
 			// this.props.order.items.map(function (item, i) {
 			// 	totalcost +=item.price*item.quantity;
@@ -27610,7 +27609,6 @@
 		//	income += this.props.order.cost;
 			this.props.completeOrder(this.props.order._id);
 			
-
 		},
 
 

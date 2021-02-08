@@ -60911,7 +60911,7 @@
 	                        value: this.props.pickupTime || true }),
 	                    _react2.default.createElement(_SelectMethodOfTrans2.default, {
 	                        handleMethodOfTrans: this.props.handleMethodOfTrans,
-	                        methodOfTransShow: this.props.methodOfTransShow }),
+	                        methodOfTransShow: this.props.methodOfTransShow || true}),
 	                    _react2.default.createElement(_SelectIfFavorite2.default, {
 	                        handleFavorite: this.props.handleFavorite,
 	                        value: this.props.favorite || false }),
