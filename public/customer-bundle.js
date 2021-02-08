@@ -26099,7 +26099,7 @@
 	        });
 	        if (newValue === true) {
 	            this.setState({
-	                methodOfTransShow: false
+	                methodOfTransShow: true
 	            });
 	        } else if (newValue !== true) {
 	            this.setState({
@@ -60975,7 +60975,7 @@
 	            _react2.default.createElement(
 	                'h2',
 	                null,
-	                'How will you get to the shop?'
+	                'Travelling ways'
 	            ),
 	            _react2.default.createElement('input', {
 	                onChange: this.props.handleMethodOfTrans,
