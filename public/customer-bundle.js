@@ -105,10 +105,10 @@
 
 	exports = module.exports = __webpack_require__(3)();
 	// imports
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Nunito);", ""]);
+	exports.push([module.id, "@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap;", ""]);
 
 	// module
-	exports.push([module.id, "body {\n  font-weight: 400;\n  background: #EDEFF0; }\n\nh1 {\n  text-align: center;\n  font-weight: 400; }\n\nh2 {\n  font-weight: 400;\n  margin: 0;\n  padding-bottom: 0.75em; }\n\np {\n  font-weight: 400; }\n\ninput:focus,\nselect:focus,\ntextarea:focus,\nbutton:focus {\n  outline: none; }\n\n/* ------- NORMALIZE CSS ----------*/\nhtml {\n  font-family: 'Nunito', sans-serif;\n  /* 1 */\n  font-size: 16px !important;\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin (opinionated).\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent displaying `audio` without controls in Mobile Safari 4/5/6/7.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability of focused elements when they are also in an\n * active/hover state (opinionated).\n */\na:active,\na:hover {\n  outline-width: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address inconsistent styling of `abbr[title]`.\n * 1. Correct styling in Firefox 39 and Opera 12.\n * 2. Correct missing styling in Chrome, Edge, IE, Opera, and Safari.\n */\nabbr[title] {\n  border-bottom: none;\n  /* 1 */\n  text-decoration: underline;\n  /* 2 */\n  text-decoration: underline dotted;\n  /* 2 */ }\n\n/**\n * Address inconsistent styling of b and strong.\n * 1. Correct duplicate application of `bolder` in Safari 6.0.2.\n * 2. Correct style set to `bold` in Edge 12+, Safari 6.2+, and Chrome 18+.\n */\nb,\nstrong {\n  font-weight: inherit;\n  /* 1 */ }\n\nb,\nstrong {\n  font-weight: bolder;\n  /* 2 */ }\n\n/**\n * Address styling not present in Android < 4.4.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background-color: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Correct border-style given when inside `a` element in IE 8/9/10.\n */\nimg {\n  border-style: none; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address inconsistent styling of `hr`.\n * 1. Correct `box-sizing` set to `border-box` in Firefox.\n * 2. Correct `overflow` set to `hidden` in IE 8/9/10/11 and Edge 12.\n */\nhr {\n  box-sizing: content-box;\n  /* 1 */\n  height: 0;\n  /* 1 */\n  overflow: visible;\n  /* 2 */ }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * 1. Correct inheritance and scaling of font-size for preformatted text.\n * 2. Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  /* 1 */\n  font-size: 1em;\n  /* 2 */ }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct font properties not being inherited.\n * 2. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font: inherit;\n  /* 1 */\n  margin: 0;\n  /* 2 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Restore focus style in Firefox 4+ (unset by a rule above)\n */\nbutton:-moz-focusring,\ninput:-moz-focusring {\n  outline: 1px dotted ButtonText; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * Address `appearance` set to `searchfield` in Safari and Chrome.\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited from fieldset in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  color: inherit;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Restore font weight (unset by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n", ""]);
+	exports.push([module.id, "body {\n  font-weight: 400;\n  background: #EDEFF0; }\n\nh1 {\n  text-align: center;\n  font-weight: 400; }\n\nh2 {\n  font-weight: 400;\n  margin: 0;\n  padding-bottom: 0.75em; }\n\np {\n  font-weight: 400; }\n\ninput:focus,\nselect:focus,\ntextarea:focus,\nbutton:focus {\n  outline: none; }\n\n/* ------- NORMALIZE CSS ----------*/\nhtml {\n  font-family: 'Yusei Magic', sans-serif;\n  /* 1 */\n  font-size: 16px !important;\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin (opinionated).\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent displaying `audio` without controls in Mobile Safari 4/5/6/7.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability of focused elements when they are also in an\n * active/hover state (opinionated).\n */\na:active,\na:hover {\n  outline-width: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address inconsistent styling of `abbr[title]`.\n * 1. Correct styling in Firefox 39 and Opera 12.\n * 2. Correct missing styling in Chrome, Edge, IE, Opera, and Safari.\n */\nabbr[title] {\n  border-bottom: none;\n  /* 1 */\n  text-decoration: underline;\n  /* 2 */\n  text-decoration: underline dotted;\n  /* 2 */ }\n\n/**\n * Address inconsistent styling of b and strong.\n * 1. Correct duplicate application of `bolder` in Safari 6.0.2.\n * 2. Correct style set to `bold` in Edge 12+, Safari 6.2+, and Chrome 18+.\n */\nb,\nstrong {\n  font-weight: inherit;\n  /* 1 */ }\n\nb,\nstrong {\n  font-weight: bolder;\n  /* 2 */ }\n\n/**\n * Address styling not present in Android < 4.4.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background-color: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Correct border-style given when inside `a` element in IE 8/9/10.\n */\nimg {\n  border-style: none; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address inconsistent styling of `hr`.\n * 1. Correct `box-sizing` set to `border-box` in Firefox.\n * 2. Correct `overflow` set to `hidden` in IE 8/9/10/11 and Edge 12.\n */\nhr {\n  box-sizing: content-box;\n  /* 1 */\n  height: 0;\n  /* 1 */\n  overflow: visible;\n  /* 2 */ }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * 1. Correct inheritance and scaling of font-size for preformatted text.\n * 2. Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  /* 1 */\n  font-size: 1em;\n  /* 2 */ }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct font properties not being inherited.\n * 2. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font: inherit;\n  /* 1 */\n  margin: 0;\n  /* 2 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Restore focus style in Firefox 4+ (unset by a rule above)\n */\nbutton:-moz-focusring,\ninput:-moz-focusring {\n  outline: 1px dotted ButtonText; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * Address `appearance` set to `searchfield` in Safari and Chrome.\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited from fieldset in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  color: inherit;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Restore font weight (unset by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n", ""]);
 
 	// exports
 
@@ -25837,7 +25837,8 @@
 	            favorite: false,
 	            paymentInfo: {
 	                nameOnCard: '',
-	            },
+				},
+				cashOnDelivery : false,
 	            previousOrders: [],
 	            favoriteOrders: [],
 	            menuShow: false
@@ -26045,7 +26046,8 @@
 	            timeUntilArrival: this.state.duration,
 	            secondsUntilArrival: this.state.durationSeconds,
 	            timeSelectedForPickup: this.state.pickupTime,
-	            expectedPickupTime: expectedPickupTime,
+				expectedPickupTime: expectedPickupTime,
+				cashondelivery : this.state.cashOnDelivery,
 				completed: false,
 	        }).end(function (err, res) {
 	            if (err) {
@@ -26066,8 +26068,8 @@
 	            favorite: false,
 	            paymentInfo: {
 	                nameOnCard: '',
-	               
-	            }
+				},
+				cashOnDelivery :false
 	        });
 	    },
 
@@ -26089,7 +26091,13 @@
 	                favoriteOrders: res.body
 	            });
 	        });
-	    },
+		},
+		
+		_handleCashOnDelivery : function _handleCashOnDelivery (newValue){
+			this.setState({
+				cashOnDelivery: newValue
+			});
+		},
 
 	    // --------------OTHER APP METHODS--------------
 
@@ -26099,7 +26107,7 @@
 	        });
 	        if (newValue === true) {
 	            this.setState({
-	                methodOfTransShow: true
+	                methodOfTransShow: false
 	            });
 	        } else if (newValue !== true) {
 	            this.setState({
@@ -26301,7 +26309,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'top-nav-logo' },
-	                        _react2.default.createElement('img', { src: '/img/gomocha-logo-sml.png' })
+	                        _react2.default.createElement('img', { src: '/img/logos.png' })
 	                    ),
 	                    _react2.default.createElement(
 	                        'ul',
@@ -26361,7 +26369,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'side-nav-logo' },
-	                            _react2.default.createElement('img', { src: '/img/gomocha-logo-sml.png' })
+	                            _react2.default.createElement('img', { src: '/img/logos.png' })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -26377,7 +26385,7 @@
 	                    _react2.default.createElement(
 	                        _reactRouter.Link,
 	                        { to: 'favorite-orders', className: 'fav-orders-link' },
-	                        _react2.default.createElement('i', { className: 'fa fa-heart fa-2x' })
+	                        _react2.default.createElement('i', { className: 'fa fa-star fa-2x' })
 	                    ),
 	                    _react2.default.createElement('div', { className: 'side-nav-divider' }),
 	                    _react2.default.createElement(
@@ -26429,7 +26437,9 @@
 	                    handleFavoriteOrders: this._handleFavoriteOrders,
 	                    previousOrders: this.state.previousOrders,
 	                    favoriteOrders: this.state.favoriteOrders,
-	                    handleMenuToggle: this._handleMenuToggle,
+						handleMenuToggle: this._handleMenuToggle,
+						handleDeliveryNow: this._handleCashOnDelivery,
+						cashOnDelivery : this.state.cashOnDelivery,
 	                    menuShow: this.state.menuShow
 	                })
 	            )
@@ -26945,7 +26955,7 @@
 
 
 	// module
-	exports.push([module.id, ".top-nav {\n  width: 100%;\n  height: 4em;\n  background: #3E474F;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 10; }\n  .top-nav .menu-bars .fa-bars, .top-nav .menu-bars .fa-times {\n    color: #ABACB0;\n    margin: 0.5em; }\n    .top-nav .menu-bars .fa-bars:hover, .top-nav .menu-bars .fa-times:hover {\n      cursor: pointer; }\n  .top-nav .top-nav-logo {\n    position: absolute;\n    left: 48.3%;\n    top: 0.6em;\n    margin: 0 auto; }\n    .top-nav .top-nav-logo img {\n      width: 2em; }\n  .top-nav .menu-show {\n    width: 100%;\n    background: #3E474F;\n    padding-left: 0;\n    text-align: center;\n    margin: 0; }\n    .top-nav .menu-show .router-link, .top-nav .menu-show .prev-orders-link, .top-nav .menu-show .fav-orders-link {\n      text-decoration: none; }\n    .top-nav .menu-show li {\n      display: block;\n      color: #ABACB0;\n      padding: 0.5em 0 0.5em 0;\n      font-size: 1.1em; }\n      .top-nav .menu-show li:hover {\n        color: #fff; }\n    .top-nav .menu-show .sign-out {\n      padding-bottom: 1.5em; }\n  .top-nav .menu-hide {\n    display: none; }\n  .top-nav .fa-clock-o, .top-nav .fa-heart, .top-nav .fa-home, .top-nav .fa-sign-out {\n    color: #ABACB0;\n    padding: 0.7em; }\n    .top-nav .fa-clock-o:hover, .top-nav .fa-heart:hover, .top-nav .fa-home:hover, .top-nav .fa-sign-out:hover {\n      color: #bdbec1; }\n  .top-nav .fa-sign-out {\n    position: absolute;\n    bottom: 4em;\n    left: 0; }\n\n.side-nav {\n  display: none;\n  width: 5em;\n  height: 100%;\n  background: #3E474F;\n  position: fixed;\n  top: 0;\n  left: 0;\n  padding-top: 5.5em; }\n  .side-nav .side-nav-logo {\n    position: absolute;\n    left: 1.4em;\n    top: 0.6em; }\n    .side-nav .side-nav-logo img {\n      width: 2em; }\n  .side-nav .side-nav-divider {\n    background: #6a6c71;\n    width: 3em;\n    height: 2px;\n    margin-left: 1em;\n    margin-top: 1em; }\n  .side-nav .fa-clock-o, .side-nav .fa-heart, .side-nav .fa-home, .side-nav .fa-sign-out {\n    color: #ABACB0;\n    padding: 0.7em; }\n    .side-nav .fa-clock-o:hover, .side-nav .fa-heart:hover, .side-nav .fa-home:hover, .side-nav .fa-sign-out:hover {\n      color: #bdbec1; }\n  .side-nav .fa-sign-out {\n    margin-top: 7em; }\n\n.center-wrap {\n  width: 520px;\n  margin: 0 auto; }\n\n.next-button {\n  margin: 1em 0 0 0;\n  text-align: center;\n  padding: 1.2em 3em;\n  border-radius: 5px;\n  border: none;\n  box-shadow: none;\n  background: #3879D9;\n  color: #fff; }\n  .next-button:hover {\n    cursor: pointer;\n    background: #4582db; }\n  .next-button .fa-arrow-right, .next-button .fa-check, .next-button .fa-pencil {\n    padding-left: 0.4em; }\n\n.main-wrap {\n  padding: 1em; }\n\n.title-cover {\n  padding: 2em;\n  min-height: 6em;\n  margin-bottom: 1em; }\n  .title-cover h1 {\n    color: #262933; }\n\n@media only screen and (min-width: 960px) {\n  .top-nav {\n    display: none; }\n  .side-nav {\n    display: block; } }\n", ""]);
+	exports.push([module.id, ".top-nav {\n  width: 100%;\n  height: 4em;\n  background:rgb(19, 18, 31);\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 10; }\n  .top-nav .menu-bars .fa-bars, .top-nav .menu-bars .fa-times {\n    color: #ABACB0;\n    margin: 0.5em; }\n    .top-nav .menu-bars .fa-bars:hover, .top-nav .menu-bars .fa-times:hover {\n      cursor: pointer; }\n  .top-nav .top-nav-logo {\n    position: absolute;\n    left: 48.3%;\n    top: 0.6em;\n    margin: 0 auto; }\n    .top-nav .top-nav-logo img {\n      width: 2em; }\n  .top-nav .menu-show {\n    width: 100%;\n    background: #3E474F;\n    padding-left: 0;\n    text-align: center;\n    margin: 0; }\n    .top-nav .menu-show .router-link, .top-nav .menu-show .prev-orders-link, .top-nav .menu-show .fav-orders-link {\n      text-decoration: none; }\n    .top-nav .menu-show li {\n      display: block;\n      color: #ABACB0;\n      padding: 0.5em 0 0.5em 0;\n      font-size: 1.1em; }\n      .top-nav .menu-show li:hover {\n        color: #fff; }\n    .top-nav .menu-show .sign-out {\n      padding-bottom: 1.5em; }\n  .top-nav .menu-hide {\n    display: none; }\n  .top-nav .fa-clock-o, .top-nav .fa-star, .top-nav .fa-home, .top-nav .fa-sign-out {\n    color: #ABACB0;\n    padding: 0.7em; }\n    .top-nav .fa-clock-o:hover, .top-nav .fa-star:hover, .top-nav .fa-home:hover, .top-nav .fa-sign-out:hover {\n      color: #bdbec1; }\n  .top-nav .fa-sign-out {\n    position: absolute;\n    bottom: 4em;\n    left: 0; }\n\n.side-nav {\n  display: none;\n  width: 5em;\n  height: 100%;\n  background: rgb(6, 4, 24);\n  position: fixed;\n  top: 0;\n  left: 0;\n  padding-top: 5.5em; }\n  .side-nav .side-nav-logo {\n    position: absolute;\n    left: 1em;\n    top: 1.8em; }\n    .side-nav .side-nav-logo img {\n      width: 2.6em; }\n  .side-nav .side-nav-divider {\n    background: #6a6c71;\n    width: 3em;\n    height: 2px;\n    margin-left: 1em;\n    margin-top: 1em; }\n  .side-nav .fa-clock-o, .side-nav .fa-star, .side-nav .fa-home, .side-nav .fa-sign-out {\n    color: #ABACB0;\n    padding: 0.7em; }\n    .side-nav .fa-clock-o:hover, .side-nav .fa-star:hover, .side-nav .fa-home:hover, .side-nav .fa-sign-out:hover {\n      color: #fff; }\n  .side-nav .fa-sign-out {\n    margin-top: 7em; }\n\n.center-wrap {\n  width: 520px;\n  margin: 0 auto; }\n\n.next-button {\n   margin: 1em 0 0 0;\n  text-align: center;\n  padding: 1.2em 3em;\n  border-radius: 7px;\n  border: 4px solid #ff7d7d;\n   box-shadow: 0px 10px 10px rgba(0,0,0,0.45);\n  background:  #fff;\n  color:#ff7d7d; }\n  .next-button:hover {\n  border: 3px solid #fff;\n   box-shadow: 10px 15px 18px rgba(0,0,0,0.65);   background: #ff7d7d;  color: #fff; \n }\n  .next-button .fa-arrow-right, .next-button .fa-check, .next-button .fa-pencil {\n    padding-left: 0.4em; }\n\n.main-wrap {\n  padding: 1em; }\n\n.title-cover {\n  padding: 2em;\n  min-height: 6em;\n  margin-bottom: 1em; }\n  .title-cover h1 {\n    color: #262933; }\n\n@media only screen and (min-width: 960px) {\n  .top-nav {\n    display: none; }\n  .side-nav {\n    display: block; } }\n", ""]);
 
 	// exports
 
@@ -27047,8 +27057,7 @@
 
 
 	// module
-	exports.push([module.id, ".item-notification-text {\n  color: #f6f6f6;\n  text-align: center;\n  text-decoration: none; }\n\n.item-notification {\n  color: #f6f6f6;\n  font-size: 1.1em;\n  padding-top: 0.7em;\n  height: 38px;\n  position: fixed;\n  left: 0;\n  text-align: center;\n  text-decoration: none;\n  top: -45px;\n  width: 100%;\n  animation: item-notification 1s ease forwards;\n  z-index: 999999; }\n\n.add-item-notification {\n  background-color: #3FB083; }\n\n.delete-item-notification {\n  background-color: #E2514E; }\n\n.error-item-notification {\n  background-color: #FAD675; }\n\n.item-notification-show {\n  display: block; }\n\n.item-notification-hide {\n  display: none; }\n\n@keyframes item-notification {\n  0% {\n    opacity: 0; }\n  50% {\n    opacity: 1; }\n  100% {\n    top: 0; } }\n\n@keyframes item-notification-hide {\n  0% {\n    top: 0; }\n  50% {\n    top: -25; }\n  100% {\n    top: -45; } }\n", ""]);
-
+	exports.push([module.id, ".item-notification-text {\n  color: #f6f6f6;\n  text-align: center;\n  text-decoration: none; }\n\n.item-notification {\n  color: #f6f6f6;\n  font-size: 1.1em;\n  padding-top: 0.7em;\n  height: 38px;\n  position: fixed;\n  left: 0;\n  text-align: center;\n  text-decoration: none;\n  top: -45px;\n  width: 100%;\n  animation: item-notification 1s ease forwards;\n  z-index: 999999; }\n\n.add-item-notification {\n  background-color: #0c8516; }\n\n.delete-item-notification {\n  background-color: #E2514E; }\n\n.error-item-notification {\n  background-color: #FAD675; }\n\n.item-notification-show {\n  display: block; }\n\n.item-notification-hide {\n  display: none; }\n\n@keyframes item-notification {\n  0% {\n    opacity: 0; }\n  50% {\n    opacity: 1; }\n  100% {\n    top: 0; } }\n\n@keyframes item-notification-hide {\n  0% {\n    top: 0; }\n  50% {\n    top: -25; }\n  100% {\n    top: -45; } }\n", ""]);
 	// exports
 
 
@@ -27100,7 +27109,7 @@
 	                _react2.default.createElement(
 	                    'a',
 	                    { href: '/' },
-	                    _react2.default.createElement('img', { src: 'img/gomocha-logo-lg.png' })
+	                    _react2.default.createElement('img', { src: 'img/logo.png' })
 	                ),
 	                _react2.default.createElement(
 	                    'ul',
@@ -27139,7 +27148,7 @@
 	                        _react2.default.createElement(
 	                            'h1',
 	                            null,
-	                            'The fastest way to your morning coffee.'
+	                            'Get your order delivery or just pick-up'
 	                        ),
 	                        _react2.default.createElement(
 	                            'form',
@@ -27174,7 +27183,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'landing-icon landing-icon-1' },
-	                    _react2.default.createElement('img', { src: '/1.png' }),
+	                    _react2.default.createElement('img', { src: '/img/1.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
@@ -27184,7 +27193,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'landing-icon landing-icon-2' },
-	                    _react2.default.createElement('img', { src: '/11.png' }),
+	                    _react2.default.createElement('img', { src: '/img/11.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
@@ -27194,23 +27203,24 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'landing-icon landing-icon-3' },
-	                    _react2.default.createElement('img', { src: '/5.png' }),
+	                    _react2.default.createElement('img', { src: '/img/5.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
 	                        'Ready when you arrive!'
 	                    )
-					),
+	                ),
 					_react2.default.createElement(
 	                    'div',
 	                    { className: 'landing-icon landing-icon-3' },
-	                    _react2.default.createElement('img', { src: '/8.png' }),
+	                    _react2.default.createElement('img', { src: '/img/8.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
-	                        'Or Get Delivery!'
+	                        'Or get gelivery!'
 	                    )
 	                )
+					
 	            ),
 	            _react2.default.createElement(
 	                'div',
@@ -27229,10 +27239,10 @@
 	                    null,
 	                    'As Used By'
 	                ),
-	                _react2.default.createElement('img', { src: 'kebab.png' }),
-	                _react2.default.createElement('img', { src: 'cremo.png' }),
-	                _react2.default.createElement('img', { src: 'food.png' }),
-	                _react2.default.createElement('img', { src: 'redhouse.png' })
+	                _react2.default.createElement('img', { src: 'img/kebab.png' }),
+	                _react2.default.createElement('img', { src: 'img/cremo.png' }),
+	                _react2.default.createElement('img', { src: 'img/food.png' }),
+	                _react2.default.createElement('img', { src: 'img/redhouse.png' })
 	            ),
 	            _react2.default.createElement(_Footer2.default, null)
 	        );
@@ -27274,16 +27284,16 @@
 	                _react2.default.createElement('i', { className: 'fa fa-google-plus-square fa-2x', 'aria-hidden': 'true' }),
 	                _react2.default.createElement('i', { className: 'fa fa-instagram fa-2x', 'aria-hidden': 'true' }),
 	                _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-2x', 'aria-hidden': 'true' }),
-	                _react2.default.createElement('img', { src: 'img/gomocha-logo-sml.png' }),
+	                _react2.default.createElement('img', { src: 'img/logos.png' }),
 	                _react2.default.createElement(
 	                    'p',
 	                    { className: 'footer-text footer-text-1' },
-	                    'About GoMocha'
+	                    'About Food Swipe'
 	                ),
 	                _react2.default.createElement(
 	                    'p',
 	                    { className: 'footer-text' },
-	                    'GoMocha Blog'
+	                    'Food Swipe Blog'
 	                ),
 	                _react2.default.createElement(
 	                    'p',
@@ -27298,7 +27308,7 @@
 	                _react2.default.createElement(
 	                    'p',
 	                    { className: 'footer-copyright' },
-	                    '\xA92016 GoMocha, Inc.'
+	                    '\xA92021 Food Swipe, Inc.'
 	                )
 	            )
 	        );
@@ -27342,8 +27352,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer-container {\n  background: #d1d6d9;\n  width: 100%;\n  padding-bottom: 0.5em;\n  text-align: center;\n  clear: both; }\n  .footer-container .footer-col-1 {\n    padding-left: 0.5em;\n    text-align: center; }\n    .footer-container .footer-col-1 .fa-facebook-square, .footer-container .footer-col-1 .fa-twitter-square, .footer-container .footer-col-1 .fa-youtube-square, .footer-container .footer-col-1 .fa-google-plus-square, .footer-container .footer-col-1 .fa-instagram, .footer-container .footer-col-1 .fa-linkedin-square {\n      color: #6b7a88;\n      margin: 0.5em 0em 0em 0.25em; }\n      .footer-container .footer-col-1 .fa-facebook-square:hover, .footer-container .footer-col-1 .fa-twitter-square:hover, .footer-container .footer-col-1 .fa-youtube-square:hover, .footer-container .footer-col-1 .fa-google-plus-square:hover, .footer-container .footer-col-1 .fa-instagram:hover, .footer-container .footer-col-1 .fa-linkedin-square:hover {\n        color: #8694a0;\n        cursor: pointer; }\n    .footer-container .footer-col-1 img {\n      width: 2em;\n      display: block;\n      margin: 0 auto;\n      padding-top: 0.3em; }\n  .footer-container p {\n    color: #6b7a88;\n    padding-left: 0.5em;\n    font-weight: 400; }\n  .footer-container .footer-text {\n    margin-bottom: 0.25em;\n    margin-top: 0.25em; }\n    .footer-container .footer-text:hover {\n      text-decoration: underline;\n      color: #8694a0;\n      cursor: pointer; }\n  .footer-container .footer-text-1 {\n    margin-top: 0.5em; }\n", ""]);
-
+	exports.push([module.id, ".footer-container {\n background: rgb(19, 18, 31);\n  width: 100%;\n  padding-bottom: 0.5em;\n  text-align: center;\n  clear: both; }\n  .footer-container .footer-col-1 {\n    padding-left: 0.5em;\n    text-align: center; }\n    .footer-container .footer-col-1 .fa-facebook-square, .footer-container .footer-col-1 .fa-twitter-square, .footer-container .footer-col-1 .fa-youtube-square, .footer-container .footer-col-1 .fa-google-plus-square, .footer-container .footer-col-1 .fa-instagram, .footer-container .footer-col-1 .fa-linkedin-square {\n      color: #6b7a88;\n      margin: 0.5em 0em 0em 0.25em; }\n      .footer-container .footer-col-1 .fa-facebook-square:hover, .footer-container .footer-col-1 .fa-twitter-square:hover, .footer-container .footer-col-1 .fa-youtube-square:hover, .footer-container .footer-col-1 .fa-google-plus-square:hover, .footer-container .footer-col-1 .fa-instagram:hover, .footer-container .footer-col-1 .fa-linkedin-square:hover {\n        color: #fff;\n        cursor: pointer; }\n    .footer-container .footer-col-1 img {\n      width: 4em;\n      display: block;\n      margin: 0 auto;\n      padding-top: 0.3em; }\n  .footer-container p {\n    color: #6b7a88;\n    padding-left: 0.5em;\n    font-weight: 400; }\n  .footer-container .footer-text {\n    margin-bottom: 0.25em;\n    margin-top: 0.25em; }\n    .footer-container .footer-text:hover {\n      text-decoration: none;\n      color: #fff;\n      cursor: pointer; }\n  .footer-container .footer-text-1 {\n    margin-top: 0.5em; }\n", ""]);
 	// exports
 
 
@@ -27382,8 +27391,7 @@
 
 
 	// module
-	exports.push([module.id, ".username-container {\n  background: #fff; }\n  .username-container nav {\n    width: 100%;\n    height: 4em;\n    background: #fff; }\n    .username-container nav img {\n      width: 6em;\n      padding-top: 0.75em;\n      padding-left: 1em; }\n    .username-container nav ul {\n      float: right; }\n      .username-container nav ul li {\n        display: inline-block;\n        text-decoration: none;\n        font-size: 0.75em;\n        margin-right: 1.5em;\n        color: #3E474F; }\n        .username-container nav ul li:hover {\n          color: #41B486;\n          cursor: pointer; }\n\n.title-cover-landing {\n  background-color: #41B486;\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover;\n  padding: 2em;\n  min-height: 7em;\n  margin-bottom: 3em; }\n  .title-cover-landing .title-cover-left {\n    display: inline-block;\n    width: 0%; }\n  .title-cover-landing .title-cover-right {\n    display: inline-block;\n    width: 100%; }\n    .title-cover-landing .title-cover-right h1 {\n      color: #fff;\n      font-size: 2.5em; }\n    .title-cover-landing .title-cover-right h2 {\n      color: #fff;\n      text-align: center; }\n    .title-cover-landing .title-cover-right form {\n      text-align: center; }\n    .title-cover-landing .title-cover-right input[type=\"text\"] {\n      width: 12em;\n      text-align: center;\n      font-size: 1.5em;\n      height: 1.5em;\n      border-radius: 5px;\n      border: 1px solid #41b486;\n      margin: .5em auto 0;\n      outline: none;\n      padding: .75em;\n      box-shadow: 0px 0px 10px #459e7b; }\n      .title-cover-landing .title-cover-right input[type=\"text\"]:focus {\n        background: #F5FAFF; }\n    .title-cover-landing .title-cover-right button {\n      display: block;\n      width: 8em;\n      margin: 1.5em auto 0 auto;\n      background: #3FB083;\n      border: none;\n      border-radius: 7px;\n      padding: 0.5em 0.1em;\n      color: #fff;\n      border: 2px solid #fff;\n      font-size: 1.7em; }\n      .title-cover-landing .title-cover-right button:hover {\n        background: #43BB8B; }\n      .title-cover-landing .title-cover-right button .fa-rocket {\n        margin-right: 5px; }\n    .title-cover-landing .title-cover-right a {\n      text-decoration: none; }\n\n.landing-icon-wrap {\n  margin-bottom: 0em;\n  text-align: center; }\n  .landing-icon-wrap .how-it-works {\n    font-size: 2em;\n    margin-bottom: 1em; }\n  .landing-icon-wrap .landing-icon {\n    display: block;\n    width: 30%;\n    margin: 0 auto; }\n  .landing-icon-wrap img {\n    width: 8em; }\n  .landing-icon-wrap h2 {\n    margin-bottom: 1.5em; }\n\n.landing-icon-button {\n  text-align: center;\n  background: #EDEFF0;\n  height: 10em; }\n  .landing-icon-button button {\n    margin-top: 2em;\n    padding: 0.5em 1.8em;\n    color: #41B486;\n    border: 2px solid #41B486;\n    background: #EDEFF0;\n    font-size: 1.4em;\n    border-radius: 5px; }\n    .landing-icon-button button:hover {\n      color: #fff;\n      background: #41B486; }\n\n.company-logo-container {\n  padding-top: 3em;\n  padding-bottom: 3em;\n  text-align: center; }\n  .company-logo-container img {\n    width: 15em;\n    padding-left: 1em;\n    padding-right: 1em; }\n\n@media only screen and (min-width: 414px) {\n  .username-container nav ul li {\n    font-size: 1em; } }\n\n@media only screen and (min-width: 685px) {\n  .landing-icon-wrap {\n    margin-bottom: 2em;\n    text-align: center; }\n    .landing-icon-wrap .landing-icon {\n      display: inline-block;\n      width: 33%;\n      text-align: center; }\n      .landing-icon-wrap .landing-icon img {\n        width: 60%; }\n      .landing-icon-wrap .landing-icon h2 {\n        text-align: center; }\n    .landing-icon-wrap .landing-icon-3 h2 {\n      font-size: 1.4em; } }\n\n@media only screen and (min-width: 753px) {\n  .username-container nav img {\n    width: 9em;\n    padding-top: 0.4em; }\n  .title-cover-landing {\n    background-image: url(\"/img/coverpage.jpg\");\n    padding: 7em; }\n    .title-cover-landing .title-cover-left {\n      display: inline-block;\n      width: 35%; }\n    .title-cover-landing .title-cover-right {\n      display: inline-block;\n      width: 65%; } }\n", ""]);
-
+	exports.push([module.id, ".username-container {\n  background: #fff; }\n  .username-container nav {\n    width: 100%;\n height: 4.5em;\n   background: rgb(19, 18, 31);\n opacity:1;}\n    .username-container nav img {\n      width: 20px;\n  padding-top: 1.5em;\n   padding-left: 1em; }\n    .username-container nav ul {\n      float: right; }\n      .username-container nav ul li {\n        display: inline-block;\n        text-decoration: none;\n        font-size: 0.75em;\n       padding-top:7px;\n  margin-right: 1.5em;\n        color:  #fff; }\n        .username-container nav ul li:hover {\n          color:  #ff7d7d;\n          cursor: pointer; }\n\n.title-cover-landing {\n  background-color: #b19351;\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover;\n  padding: 2em;\n  min-height: 7em;\n  margin-bottom: 3em; }\n  .title-cover-landing .title-cover-left {\n    display: inline-block;\n    width: 0%; }\n  .title-cover-landing .title-cover-right {\n    display: inline-block;\n  width: 100%; }\n    .title-cover-landing .title-cover-right h1 {\n     color:  rgb(255, 255, 255);\n   opacity:0.9;\n   font-size: 2.45em; }\n    .title-cover-landing .title-cover-right h2 {\n      color:  rgb(0, 0, 0);\n      text-align: center; }\n    .title-cover-landing .title-cover-right form {\n      text-align: center; }\n    .title-cover-landing .title-cover-right input[type=\"text\"] {\n     background:#fff; opacity:0.8; width: 12em;\n      text-align: center;\n      font-size: 1.5em;\n      height: 1.5em;\n      border-radius: 10px;\n      border: 4px solid  #633e0f;\n      margin: .5em auto 0;\n      outline: none;\n      padding: .75em;\n      box-shadow: 0px 10px 10px #000; }\n      .title-cover-landing .title-cover-right input[type=\"text\"]:focus {\n        background: #ffffe3; }\n    .title-cover-landing .title-cover-right button {\n      display: block;\n      width: 7em;\n      margin: 1.5em auto 0 auto;\n      background:  transparent;\n   opacity:0.9;\n   border: none;\n      border-radius: 20px;\n      padding: 0.5em 0.1em;\n      color:  #fff;\n      border: 5px solid #fff;\n   box-shadow: 0 20px 20px rgba(0,0,0,0.70);  font-size: 1.9em; }\n      .title-cover-landing .title-cover-right button:hover {\n  color: #000;\n  background: #97733c;  box-shadow: 20px 25px 28px rgba(0,0,0,0.95); }\n      .title-cover-landing .title-cover-right button .fa-rocket {\n        margin-right: 5px; }\n    .title-cover-landing .title-cover-right a {\n      text-decoration: none; }\n\n.landing-icon-wrap {\n  margin-bottom: 0em;\n  text-align: center; }\n  .landing-icon-wrap .how-it-works {\n  font-size: 2em;\n    margin-bottom: 1em; }\n  .landing-icon-wrap .landing-icon {\n    display: block;\n    width: 25%;\n    margin: 0 auto; }\n  .landing-icon-wrap img {\n    width: 4em; }\n  .landing-icon-wrap h2 {\n    margin-bottom: 1.5em; }\n\n.landing-icon-button {\n  text-align: center;\n  background: #fff;\n  height: 10em; }\n  .landing-icon-button button {\n    margin-top: 2em;\n    padding: 0.5em 1.8em;\n    color: #fff;\n    border: 4px solid #fff;\n  box-shadow: 0 10px 11px rgba(0,0,0,0.5);  background:#ff7d7d;\n    font-size: 1.4em;\n    border-radius: 9px; }\n  .company-logo-container {\n  padding-top: 3em;\n  padding-bottom: 3em;\n  text-align: center; }\n  .company-logo-container img {\n    width: 15em;\n    padding-left: 1em;\n    padding-right: 1em; }\n\n@media only screen and (min-width: 414px) {\n  .username-container nav ul li {\n    font-size: 1em; } }\n\n@media only screen and (min-width: 685px) {\n  .landing-icon-wrap {\n    margin-bottom: 2em;\n    text-align: center; }\n    .landing-icon-wrap .landing-icon {\n      display: inline-block;\n      width: 25%;\n      text-align: center; }\n      .landing-icon-wrap .landing-icon img {\n        width: 60%; }\n      .landing-icon-wrap .landing-icon h2 {\n        text-align: center; }\n    .landing-icon-wrap .landing-icon-3 h2 {\n      font-size: 1.4em; } }\n\n@media only screen and (min-width: 753px) {\n  .username-container nav img {\n    width: 10em;\n    padding-top: 0.7em; }\n  .title-cover-landing {\n    background-image: url(\"/img/coverpage.jpg\");\n    padding: 7em; }\n    .title-cover-landing .title-cover-left {\n      display: inline-block;\n      width: 35%; }\n    .title-cover-landing .title-cover-right {\n      display: inline-block;\n      width: 65%; } }\n", ""]);
 	// exports
 
 
@@ -58693,7 +58701,7 @@
 	                _react2.default.createElement(
 	                    'h1',
 	                    null,
-	                    'Your coffee is just minutes away.'
+	                    'Your food is just minutes away.'
 	                )
 	            ),
 	            _react2.default.createElement(
@@ -58707,8 +58715,8 @@
 	                        {
 	                            onClick: this.props.handleClearItemsFromOrder,
 	                            className: 'next-button start-button' },
-	                        _react2.default.createElement('i', { className: 'fa fa-coffee', 'aria-hidden': 'true' }),
-	                        'Start'
+	                
+	                        'Let\'s Start'
 	                    )
 	                )
 	            ),
@@ -58718,7 +58726,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'dash-landing-icon dash-landing-icon-1' },
-	                    _react2.default.createElement('img', { src: '/1.png' }),
+	                    _react2.default.createElement('img', { src: '/img/1.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
@@ -58728,7 +58736,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'dash-landing-icon dash-landing-icon-2' },
-	                    _react2.default.createElement('img', { src: '/11.png' }),
+	                    _react2.default.createElement('img', { src: '/img/11.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
@@ -58738,21 +58746,21 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'dash-landing-icon dash-landing-icon-3' },
-	                    _react2.default.createElement('img', { src: '5.png' }),
+	                    _react2.default.createElement('img', { src: '/img/5.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
 	                        'Ready when you arrive!'
 	                    )
-					),
+	                ),
 					_react2.default.createElement(
 	                    'div',
 	                    { className: 'dash-landing-icon dash-landing-icon-3' },
-	                    _react2.default.createElement('img', { src: '8.png' }),
+	                    _react2.default.createElement('img', { src: '/img/8.png' }),
 	                    _react2.default.createElement(
 	                        'h2',
 	                        null,
-	                        'Or Get Deliver!'
+	                        'Or get delivery!'
 	                    )
 	                )
 	            ),
@@ -58798,7 +58806,7 @@
 
 
 	// module
-	exports.push([module.id, ".dashboard-container {\n  margin-left: 0em;\n  margin-top: 4em; }\n  .dashboard-container .title-cover h1 {\n    color: #333333; }\n  .dashboard-container .start-button-wrap {\n    display: block;\n    text-align: center;\n    margin: 1em auto 3em auto; }\n    .dashboard-container .start-button-wrap button.start-button {\n      background: #3FB083;\n      margin: 0em;\n      padding: 1.5em 3em;\n      font-size: 1.75em; }\n      .dashboard-container .start-button-wrap button.start-button:hover {\n        background: #43bb8b; }\n    .dashboard-container .start-button-wrap .fa-coffee {\n      margin-right: 0.35em; }\n  .dashboard-container .dashboard-divider {\n    width: 100%;\n    height: 2px;\n    background: #BDBEC1;\n    margin: 5em auto 0 auto; }\n  .dashboard-container h2.how-it-works {\n    text-align: center;\n    margin-top: 2em;\n    margin-bottom: 2em;\n    color: #333333; }\n\n.dash-landing-icon-wrap {\n  text-align: center;\n  width: 80%;\n  margin: 0 auto; }\n  .dash-landing-icon-wrap .how-it-works {\n    font-size: 1em;\n    margin-bottom: 1em; }\n  .dash-landing-icon-wrap .dash-landing-icon {\n    display: block;\n    margin: 0 auto; }\n    .dash-landing-icon-wrap .dash-landing-icon h2 {\n      font-size: 1.2em; }\n  .dash-landing-icon-wrap img {\n    width: 8em; }\n  .dash-landing-icon-wrap h2 {\n    margin-bottom: 1.5em; }\n\n@media only screen and (min-width: 685px) {\n  .dash-landing-icon-wrap {\n    margin-bottom: 2em;\n    text-align: center; }\n    .dash-landing-icon-wrap .dash-landing-icon {\n      display: inline-block;\n      width: 33%;\n      text-align: center; }\n      .dash-landing-icon-wrap .dash-landing-icon img {\n        width: 40%; }\n      .dash-landing-icon-wrap .dash-landing-icon h2 {\n        text-align: center; }\n    .dash-landing-icon-wrap .dash-landing-icon-3 h2 {\n      font-size: 1em; } }\n\n@media only screen and (min-width: 960px) {\n  .dashboard-container {\n    margin-top: 0em;\n    margin-left: 5em; } }\n", ""]);
+	exports.push([module.id, ".dashboard-container {\n background-image: url(\"/img/coverpage.png\");  background-size: cover;   position: relative; justify-content: center; margin-left: 0em;\n  margin-top: 4em; }\n     .dashboard-container .title-cover h1 {\n  font-family: 'Yusei Magic', sans-serif;  color: #000; }\n  .dashboard-container .start-button-wrap {\n    display: block;\n    text-align: center;\n    margin: 1em auto 3em auto; }\n    .dashboard-container .start-button-wrap button.start-button {\n   font-family: 'Yusei Magic', sans-serif;   background:#060418;\n      margin: 0em;\n      padding: 1.5em 3em;\n   border-radius:8px;   font-size: 1.75em; }\n      .dashboard-container .start-button-wrap button.start-button:hover {\n        background: #ff7d7d; }\n      .dashboard-container .dashboard-divider {\n    width: 100%;\n    height: 2px;\n    background: #BDBEC1;\n    margin: 5em auto 0 auto; }\n  .dashboard-container h2.how-it-works {\n  font-family: 'Yusei Magic', sans-serif;  text-align: center;\n    margin-top: 2em;\n    margin-bottom: 2em;\n    color: #333333; }\n\n.dash-landing-icon-wrap {\n font-family: 'Yusei Magic', sans-serif; text-align: center;\n  width: 80%;\n  margin: 0 auto; }\n  .dash-landing-icon-wrap .how-it-works {\n    font-size: 1em;\n    margin-bottom: 1em; }\n  .dash-landing-icon-wrap .dash-landing-icon {\n    display: block;\n    margin: 0 auto; }\n    .dash-landing-icon-wrap .dash-landing-icon h2 {\n      font-size: 1.2em; }\n  .dash-landing-icon-wrap img {\n    width: 8em; }\n  .dash-landing-icon-wrap h2 {\n    margin-bottom: 1.5em; }\n\n@media only screen and (min-width: 685px) {\n  .dash-landing-icon-wrap {\n    margin-bottom: 2em;\n    text-align: center; }\n    .dash-landing-icon-wrap .dash-landing-icon {\n      display: inline-block;\n      width: 25%;\n      text-align: center; }\n      .dash-landing-icon-wrap .dash-landing-icon img {\n        width: 40%; }\n      .dash-landing-icon-wrap .dash-landing-icon h2 {\n        text-align: center; }\n    .dash-landing-icon-wrap .dash-landing-icon-3 h2 {\n      font-size: 1em; } }\n\n@media only screen and (min-width: 960px) {\n  .dashboard-container {\n    margin-top: 0em;\n    margin-left: 5em; } }\n", ""]);
 
 	// exports
 
@@ -59431,7 +59439,7 @@
 
 
 	// module
-	exports.push([module.id, ".decaf-option {\n  display: inline-block; }\n\n.decaf-input {\n  margin-left: 0.5em; }\n\n.hot-or-cold-option {\n  display: inline-block; }\n\n.hot-or-cold-option label {\n  margin-left: 1em; }\n\n.hot-input, .cold-input {\n  margin-left: 0.4em; }\n\n.add-to-order-wrap {\n  display: inline-block;\n  float: right;\n  margin-right: 1em;\n  margin-top: -0.1em; }\n  .add-to-order-wrap .add-to-order {\n    color: #fff;\n    background: #3FB083;\n    margin-left: 1em;\n    border-radius: 3px;\n    font-size: 0.9em;\n    padding: 0.6em 0.9em; }\n    .add-to-order-wrap .add-to-order:hover {\n      cursor: pointer;\n      background: #52c195; }\n\n.milk-type, .size, .quantity {\n  display: inline-block;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  padding: 0.2em 0.5em;\n  border-radius: 3px;\n  background: url(\"/img/down-arrow.png\") no-repeat #F8F8F8;\n  font-size: 0.95em; }\n  .milk-type:hover, .size:hover, .quantity:hover {\n    cursor: pointer; }\n\n.milk-type {\n  background-position: 90% 55%;\n  width: 7.5em; }\n\n.size {\n  background-position: 85% 55%;\n  width: 4.5em; }\n\n.quantity {\n  background-position: 85% 55%;\n  width: 3.9em; }\n", ""]);
+	exports.push([module.id, ".decaf-option {\n  display: inline-block; }\n\n.decaf-input {\n  margin-left: 0.5em; }\n\n  .decaf-input:hover{\n color:#ff5e5e;}  .hot-or-cold-option {\n  display: inline-block; }\n\n.hot-or-cold-option label {\n  margin-left: 1em; }\n\n.hot-input, .cold-input {\n  margin-left: 0.4em; }\n\n.add-to-order-wrap {\n  display: inline-block;\n  float: right;\n  margin-right: 1em;\n  margin-top: -0.1em; }\n  .add-to-order-wrap .add-to-order {\n    color: #fff;\n    background: #ff5e5e;\n    margin-left: 1em;\n    border-radius: 3px;\n    font-size: 0.9em;\n    padding: 0.6em 0.9em; }\n    .add-to-order-wrap .add-to-order:hover {\n  box-shadow: 0px 1px 2px #000;    cursor: pointer;\n     }\n\n.milk-type, .size, .quantity {\n  display: inline-block;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  padding: 0.2em 0.5em;\n  border-radius: 3px;\n  background: url(\"/img/down-arrow.png\") no-repeat #F8F8F8;\n  font-size: 0.95em; }\n  .milk-type:hover, .size:hover, .quantity:hover {\n    cursor: pointer; }\n\n.milk-type {\n  background-position: 90% 55%;\n  width: 7.5em; }\n\n.size {\n  background-position: 85% 55%;\n  width: 4.5em; }\n\n.quantity {\n  background-position: 85% 55%;\n  width: 3.9em; }\n", ""]);
 
 	// exports
 
@@ -59536,18 +59544,18 @@
 	            ),
 	            _react2.default.createElement(
 	                'option',
-	                { value: '12 oz.' },
-	                '12 oz.'
+	                { value: '12 oz' },
+	                '12 oz'
 	            ),
 	            _react2.default.createElement(
 	                'option',
-	                { value: '16 oz.' },
-	                '16 oz.'
+	                { value: '16 oz' },
+	                '16 oz'
 	            ),
 	            _react2.default.createElement(
 	                'option',
-	                { value: '20 oz.' },
-	                '20 oz.'
+	                { value: '20 oz' },
+	                '20 oz'
 	            )
 	        );
 	    }
@@ -59757,7 +59765,7 @@
 
 
 	// module
-	exports.push([module.id, ".drink-item {\n  overflow: hidden;\n  margin-bottom: 1.2em;\n  border: 1px solid #E4E4E4;\n  background: #fff;\n  padding: 0.5em 0em 0.5em 0em;\n  border-radius: 3px;\n  box-shadow: #999999 0px 1px; }\n  .drink-item select {\n    margin-right: 0.5em; }\n\n.item-top-row {\n  margin-bottom: 0.75em;\n  width: 100%;\n  display: inline-block; }\n\n.item-name-wrap {\n  margin-right: 0.5em;\n  display: inline-block;\n  font-size: 1.2em;\n  width: 100%;\n  padding-bottom: 0.25em;\n  margin-bottom: 0.5em;\n  border-bottom: 1px solid #E4E4E4;\n  padding-left: 0.5em;\n  padding-right: 0.5em; }\n  .item-name-wrap .item-name {\n    float: left;\n    color: #3E474F; }\n\n.item-options {\n  width: 82%;\n  display: inline-block;\n  padding-left: 0.5em; }\n\n.item-other-options {\n  font-size: 0.85em;\n  padding-left: 0.5em;\n  color: #888888; }\n\n.item-price {\n  display: inline-block;\n  width: 5%;\n  font-size: 1em;\n  padding-right: 0.75em;\n  padding-top: 5px;\n  color: #3E474F; }\n", ""]);
+	exports.push([module.id, ".drink-item {\n  overflow: hidden;\n  margin-bottom: 1.2em;\n  border: 1px solid #E4E4E4;\n  background: #fff;\n  padding: 0.5em 0em 0.5em 0em;\n  border-radius: 3px;\n  box-shadow: #999999 0px 1px; }\n  .drink-item select {\n    margin-right: 0.5em; }\n\n.item-top-row {\n  margin-bottom: 0.75em;\n  width: 100%;\n  display: inline-block; }\n\n.item-name-wrap {\n  margin-right: 0.5em;\n  display: inline-block;\n  font-size: 1.2em;\n  width: 100%;\n  padding-bottom: 0.25em;\n  margin-bottom: 0.5em;\n  border-bottom: 1px solid #E4E4E4;\n  padding-left: 0.5em;\n  padding-right: 0.5em; }\n  .item-name-wrap .item-name {\n    float: left;\n    color: #3E474F; }\n\n.item-options {\n  width: 82%;\n  display: inline-block;\n  padding-left: 0.5em; }\n\n.item-other-options {\n  font-size: 1em;\n  padding-left: 0.5em;\n  color: #888888; }\n\n.item-price {\n  display: inline-block;\n  width: 5%;\n  font-size: 1em;\n  padding-right: 0.75em;\n  padding-top: 5px;\n  color: #3E474F; }\n", ""]);
 
 	// exports
 
@@ -59797,7 +59805,7 @@
 
 
 	// module
-	exports.push([module.id, ".divider {\n  width: 100%;\n  border-bottom: 1px solid #333333; }\n\n.menu-section {\n  color: #333333; }\n\n@media only screen and (min-width: 600px) {\n  .menu-section {\n    width: 21em;\n    margin: 0em auto 2.5em auto; }\n    .menu-section:nth-child(odd) {\n      margin-left: 4em; }\n    .menu-section:nth-child(even) {\n      margin-left: 4em; } }\n\n@media only screen and (max-width: 599px) {\n  .menu-section {\n    width: 95%;\n    margin: 0em auto 2.5em auto; } }\n\n@media only screen and (min-width: 1160px) {\n  .menu-section {\n    display: inline-block; }\n    .menu-section:nth-child(odd) {\n      margin-left: 3.7em;\n      margin-right: 1em; }\n    .menu-section:nth-child(even) {\n      margin-left: 0em; }\n    .menu-section:nth-child(4) {\n      position: relative; } }\n\n@media only screen and (min-width: 1200px) {\n  .menu-section:nth-child(even) {\n    margin-right: 21em; } }\n", ""]);
+	exports.push([module.id, ".divider {\n  width: 100%;\n  border-bottom: 1px solid #333333; }\n\n.menu-section {\n  color: #000; }\n\n@media only screen and (min-width: 600px) {\n  .menu-section {\n    width: 21em;\n    margin: 0em auto 2.5em auto; }\n    .menu-section:nth-child(odd) {\n      margin-left: 4em; }\n    .menu-section:nth-child(even) {\n      margin-left: 4em; } }\n\n@media only screen and (max-width: 599px) {\n  .menu-section {\n    width: 95%;\n    margin: 0em auto 2.5em auto; } }\n\n@media only screen and (min-width: 1160px) {\n  .menu-section {\n    display: inline-block; }\n    .menu-section:nth-child(odd) {\n      margin-left: 3.7em;\n      margin-right: 1em; }\n    .menu-section:nth-child(even) {\n      margin-left: 0em; }\n    .menu-section:nth-child(4) {\n      position: relative; } }\n\n@media only screen and (min-width: 1200px) {\n  .menu-section:nth-child(even) {\n    margin-right: 21em; } }\n", ""]);
 
 	// exports
 
@@ -60282,7 +60290,7 @@
 
 
 	// module
-	exports.push([module.id, "#order-total {\n  box-shadow: #999999 0px 1px; }\n  #order-total h2 {\n    text-align: left;\n    color: #333333; }\n\n.next-button-container {\n  width: 28em;\n  margin: 2em auto 2em auto; }\n\n.order-total-table {\n  margin: 0 auto;\n  width: 100%;\n  border: 1px solid #E4E4E4;\n  background: #fff;\n  border-collapse: collapse; }\n\n@media only screen and (min-width: 600px) {\n  #order-total {\n    max-width: 28em;\n    margin: 0 auto; } }\n", ""]);
+	exports.push([module.id, "##order-total {\n  box-shadow: #999999 0px 1px; }\n  #order-total h2 {\n    text-align: left;\n    color: #000; }\n\n.next-button-container {\n  width: 28em;\n  margin: 2em auto 2em auto; }\n\n.order-total-table {\n  margin: 0 auto;\n  width: 100%;\n  border: 1px solid #E4E4E4;\n  background: #fff;\n  border-collapse: collapse; }\n\n@media only screen and (min-width: 600px) {\n  #order-total {\n    max-width: 28em;\n    margin: 0 auto; } }\n", ""]);
 
 	// exports
 
@@ -60377,7 +60385,7 @@
 
 
 	// module
-	exports.push([module.id, "#special-instructions { \n  }\n  #special-instructions textarea {\n    border: 1px solid #E4E4E4;\n    padding: 0.5em;\n    width: 20em;\n    font-size: 1em;  }\n    #special-instructions textarea:focus {\n      border: 2px solid #3FB083; }\n\n@media only screen and (min-width: 100px) {\n  #special-instructions {\n  width: 2em; \n   margin: 0 auto 1em auto; } }\n", ""]);
+	exports.push([module.id, "#special-instructions { \n  }\n  #special-instructions textarea {\n  border-radius:3px;  border: 1px solid #E4E4E4;\n    padding: 0.5em;\n    width: 20em;\n   font-size: 1em;  }\n    #special-instructions textarea:focus {\n      border: 2px solid #ff5e5e; }\n\n@media only screen and (min-width: 100px) {\n  #special-instructions {\n  width: 2em; \n   margin: 0 auto 1em auto; } }\n", ""]);
 
 	// exports
 
@@ -60417,7 +60425,7 @@
 
 
 	// module
-	exports.push([module.id, ".custom-order-container {\n  margin-left: 0em;\n  margin-top: 4em;\n  padding-right: 0.4em; }\n  .custom-order-container .custom-order-view-wrap {\n    margin-bottom: 3em; }\n  .custom-order-container .userProgress {\n    position: relative;\n    width: 100%;\n    height: 30px;\n    background-color: #fff;\n    border-radius: 5px;\n    margin: 0 auto;\n    border: 1px solid #E4E4E4; }\n  .custom-order-container #twoOfFive {\n    position: absolute;\n    width: 40%;\n    height: 100%;\n    background: #3FB083;\n    border-radius: 5px 0px 0px 5px; }\n  .custom-order-container .order-total-container {\n    text-align: center; }\n\n@media only screen and (min-width: 600px) {\n  .custom-order-container .userProgress {\n    width: 25em; } }\n\n@media only screen and (min-width: 750px) {\n  .custom-order-container {\n    margin-left: 2.5em; }\n    .custom-order-container .custom-order-view-wrap {\n      position: relative;\n      width: 100%; }\n      .custom-order-container .custom-order-view-wrap .menu-form-container {\n        float: left; }\n      .custom-order-container .custom-order-view-wrap .order-total-container {\n        position: fixed;\n top :50px;\n         right: 2em;\n        width: 20em; } }\n\n@media only screen and (min-width: 460px) {\n  .custom-order-container {\n    margin-top: 0em;\n    margin-left: 5em; } }\n", ""]);
+	exports.push([module.id, ".custom-order-container {\n   background-image: url(\"/img/coverpage.png\");  background-size: cover;   position: relative; justify-content: center;   margin-left: 0em;\n  margin-top: 4em;\n  padding-right: 0.4em; }\n  .custom-order-container .custom-order-view-wrap {\n   margin-bottom: 3em; }\n  .custom-order-container .userProgress {\n    position: relative;\n    width: 100%;\n    height: 30px;\n    background-color: #fff;\n    border-radius: 5px;\n    margin: 0 auto;\n    border: 1px solid #E4E4E4; }\n  .custom-order-container #twoOfFive {\n    position: absolute;\n    width: 40%;\n    height: 100%;\n    background:  #ff5e5e;\n    border-radius: 5px 0px 0px 5px; }\n .custom-order-container .menu-form-container{\n    }\n\n .custom-order-container .order-total-container {\n    text-align: center; }\n\n   @media only screen and (min-width: 600px) {\n  .custom-order-container .userProgress {\n    width: 25em; } }\n\n@media only screen and (min-width: 750px) {\n  .custom-order-container {\n    margin-left: 2.5em; }\n    .custom-order-container .custom-order-view-wrap {\n      position: relative;\n      width: 100%; }\n      .custom-order-container .custom-order-view-wrap .menu-form-container {\n        float: left; }\n      .custom-order-container .custom-order-view-wrap .order-total-container {\n        position: fixed;\n top :50px;\n         right: 2em;\n        width: 20em; } }\n\n@media only screen and (min-width: 460px) {\n  .custom-order-container {\n    margin-top: 0em;\n    margin-left: 5em; } }\n", ""]);
 
 	// exports
 
@@ -60729,7 +60737,7 @@
 
 
 	// module
-	exports.push([module.id, ".shop-list-item-container {\n  border: 1px solid #E4E4E4;\n  background: #fff;\n  width: 80%;\n  padding: 1em 1.2em 1.4em 1.2em;\n  border-radius: 3px;\n  margin: 0 auto 1.2em auto;\n  text-align: left;\n  box-shadow: #999999 0px 1px;\n  vertical-align: bottom; }\n  .shop-list-item-container:hover {\n    border: 1px solid #bebcbc;\n    cursor: pointer; }\n\n.shop-list-item-details {\n  display: inline-block;\n  width: 100%;\n  border-radius: 3px; }\n\n.shop-list-item-details h2 {\n  color: #3E474F;\n  padding-bottom: 0.5em;\n  font-size: 1.3em; }\n\n.shop-list-item-details p {\n  color: #888888;\n  margin: 0; }\n\n.shop-list-distance {\n  display: inline-block;\n  float: right;\n  margin: 0; }\n\n.open-now {\n  display: inline-block;\n  color: #3FB083; }\n\n.closed-now {\n  display: inline-block;\n  color: #A73232; }\n\n.shop-list-bottom-row {\n  padding-top: 0.25em; }\n\n@media only screen and (min-width: 750px) {\n  .shop-list-item-container {\n    display: inline-block;\n    width: 38%;\n    text-align: left; }\n    .shop-list-item-container:nth-child(even) {\n      margin-left: 2em;\n      margin-right: 0em; }\n    .shop-list-item-container:nth-child(odd) {\n      margin-left: 0em; } }\n\n@media only screen and (min-width: 1000px) {\n  .shop-list-item-container {\n    width: 21em; }\n    .shop-list-item-container:nth-child(even) {\n      clear: right; }\n    .shop-list-item-container:nth-child(odd) {\n      clear: left; } }\n\n@media only screen and (min-width: 1289px) {\n  .shop-list-item-container {\n    width: 21em; }\n    .shop-list-item-container:nth-child(even) {\n      margin-right: 10em; }\n    .shop-list-item-container:nth-child(odd) {\n      margin-left: 10em; } }\n", ""]);
+	exports.push([module.id, ".shop-list-item-container {\n  border: 1px solid #E4E4E4;\n  background: #fff;\n  width: 80%;\n  padding: 1em 1.2em 1.4em 1.2em;\n  border-radius: 3px;\n  margin: 0 auto 1.2em auto;\n  text-align: left;\n  box-shadow: #999999 0px 1px;\n  vertical-align: bottom; }\n  .shop-list-item-container:hover {\n    border: 1px solid #bebcbc;\n    cursor: pointer; }\n\n.shop-list-item-details {\n  display: inline-block;\n  width: 100%;\n  border-radius: 3px; }\n\n.shop-list-item-details h2 {\n   color: #3E474F;\n  padding-bottom: 0.5em;\n  font-size: 1.3em; }\n\n.shop-list-item-details p {\n   color: #888888;\n  margin: 0; }\n\n.shop-list-distance {\n  display: inline-block;\n  float: right;\n  margin: 0; }\n\n.open-now {\n  display: inline-block;\n  color: #ff5e5e; }\n\n.closed-now {\n  display: inline-block;\n  color: #A73232; }\n\n.shop-list-bottom-row {\n  padding-top: 0.25em; }\n\n@media only screen and (min-width: 750px) {\n  .shop-list-item-container {\n    display: inline-block;\n    width: 38%;\n    text-align: left; }\n    .shop-list-item-container:nth-child(even) {\n      margin-left: 2em;\n      margin-right: 0em; }\n    .shop-list-item-container:nth-child(odd) {\n      margin-left: 0em; } }\n\n@media only screen and (min-width: 1000px) {\n  .shop-list-item-container {\n    width: 21em; }\n    .shop-list-item-container:nth-child(even) {\n      clear: right; }\n    .shop-list-item-container:nth-child(odd) {\n      clear: left; } }\n\n@media only screen and (min-width: 1289px) {\n  .shop-list-item-container {\n    width: 21em; }\n    .shop-list-item-container:nth-child(even) {\n      margin-right: 10em; }\n    .shop-list-item-container:nth-child(odd) {\n      margin-left: 10em; } }\n", ""]);
 
 	// exports
 
@@ -60769,7 +60777,7 @@
 
 
 	// module
-	exports.push([module.id, ".select-shop-container {\n  margin-left: 0em;\n  margin-top: 4em; }\n  .select-shop-container h1 {\n    color: #333333; }\n  .select-shop-container .main-wrap {\n    min-height: 25em; }\n    .select-shop-container .main-wrap .loading-icon {\n      margin-top: 0em;\n      text-align: center; }\n    .select-shop-container .main-wrap .location-notification-container {\n      background: #fff;\n      max-width: 30em;\n      margin: 0 auto;\n      border: 1px solid #bebcbc;\n      border-radius: 3px;\n      padding: 1em;\n      text-align: center; }\n      .select-shop-container .main-wrap .location-notification-container h2 {\n        color: #737373; }\n      .select-shop-container .main-wrap .location-notification-container .fa-location-arrow {\n        color: #40B284; }\n  .select-shop-container .userProgress {\n    position: relative;\n    width: 100%;\n    height: 30px;\n    background-color: #fff;\n    border-radius: 5px;\n    margin: 0 auto;\n    border: 1px solid #E4E4E4; }\n    .select-shop-container .userProgress #oneOfFive {\n      position: absolute;\n      width: 20%;\n      height: 100%;\n      background: #3FB083;\n      border-radius: 5px 0px 0px 5px; }\n  .select-shop-container .hide {\n    display: none; }\n\n@media only screen and (min-width: 600px) {\n  .select-shop-container .userProgress {\n    width: 25em; } }\n\n@media only screen and (min-width: 960px) {\n  .select-shop-container {\n    margin-top: 0em;\n    margin-left: 5em; } }\n", ""]);
+	exports.push([module.id, ".select-shop-container {\n background-image: url(\"/img/coverpage.png\");  background-size: cover;   position: relative; justify-content: center; margin-left: 0em;\n  margin-top: 4em; }\n  .select-shop-container h1 {\n  font-family: 'Yusei Magic', sans-serif;  color: #000000; }\n  .select-shop-container .main-wrap {\n    min-height: 25em; }\n    .select-shop-container .main-wrap .loading-icon {\n      margin-top: 0em;\n      text-align: center; }\n    .select-shop-container .main-wrap .location-notification-container {\n      background: #fff;\n      max-width: 30em;\n      margin: 0 auto;\n      border: 1px solid #bebcbc;\n      border-radius: 3px;\n      padding: 1em;\n      text-align: center; }\n      .select-shop-container .main-wrap .location-notification-container h2 {\n   font-family: 'Yusei Magic', sans-serif;     color: #737373; }\n      .select-shop-container .main-wrap .location-notification-container .fa-location-arrow {\n        color:  #ff5e5e; }\n  .select-shop-container .userProgress {\n    position: relative;\n    width: 100%;\n    height: 30px;\n    background-color: #fff;\n    border-radius: 5px;\n    margin: 0 auto;\n    border: 1px solid #E4E4E4; }\n    .select-shop-container .userProgress #oneOfFive {\n      position: absolute;\n      width: 20%;\n      height: 100%;\n      background:  #ff5e5e;\n      border-radius: 5px 0px 0px 5px; }\n  .select-shop-container .hide {\n    display: none; }\n\n@media only screen and (min-width: 600px) {\n  .select-shop-container .userProgress {\n    width: 25em; } }\n\n@media only screen and (min-width: 960px) {\n  .select-shop-container {\n    margin-top: 0em;\n    margin-left: 5em; } }\n", ""]);
 
 	// exports
 
@@ -60838,7 +60846,9 @@
 	        expMonth: _react2.default.PropTypes.string,
 	        handleCCExpYear: _react2.default.PropTypes.func,
 	        expYear: _react2.default.PropTypes.string,
-	        handleCCCVV: _react2.default.PropTypes.func,
+			handleCCCVV: _react2.default.PropTypes.func,
+			handleDeliveryNow : _react2.default.PropTypes.func,
+			cashOnDelivery : _react2.default.PropTypes.bool,
 	        toggleAdditionalInfoNotification: _react2.default.PropTypes.func,
 	        methodOfTrans: _react2.default.PropTypes.string,
 	        methodOfTransShow: _react2.default.PropTypes.bool
@@ -60911,7 +60921,7 @@
 	                        value: this.props.pickupTime || true }),
 	                    _react2.default.createElement(_SelectMethodOfTrans2.default, {
 	                        handleMethodOfTrans: this.props.handleMethodOfTrans,
-	                        methodOfTransShow: this.props.methodOfTransShow || true}),
+	                        methodOfTransShow: this.props.methodOfTransShow }),
 	                    _react2.default.createElement(_SelectIfFavorite2.default, {
 	                        handleFavorite: this.props.handleFavorite,
 	                        value: this.props.favorite || false }),
@@ -60922,7 +60932,9 @@
 	                        expMonthValue: this.props.expMonth || 'default',
 	                        handleCCExpYear: this.props.handleCCExpYear,
 	                        expYearValue: this.props.expYear || 'default',
-							handleCCCVV: this.props.handleCCCVV }),
+							handleCCCVV: this.props.handleCCCVV,
+							handleDeliveryNow : this.props.handleDeliveryNow,
+							cashOnDelivery: this.props.cashOnDelivery }),
 						_react2.default.createElement(_SpecialInstructions2.default, {
 								handleSpecialInstructions: this.props.handleSpecialInstructions,
 								handleSpecialLocations: this.props.handleSpecialLocations 
@@ -60975,7 +60987,7 @@
 	            _react2.default.createElement(
 	                'h2',
 	                null,
-	                'Travelling ways'
+	                'How will you get to the shop?'
 	            ),
 	            _react2.default.createElement('input', {
 	                onChange: this.props.handleMethodOfTrans,
@@ -61057,7 +61069,7 @@
 
 
 	// module
-	exports.push([module.id, "@media only screen and (min-width: 600px) {\n  .method-of-trans-container {\n    width: 28em;\n    margin: 0 auto 1em auto; } }\n\n@media only screen and (max-width: 599px) {\n  .method-of-trans-container {\n    width: 90%;\n    margin: 0 auto 1em auto; } }\n\n.method-of-trans-container-hide {\n  display: none; }\n\n.method-of-trans-container {\n  text-align: center;\n  padding: 0.75em 0.75em 1em 0.75em;\n  border: 1px solid #E4E4E4;\n  border-radius: 3px;\n  background: #fff;\n  box-shadow: #999999 0px 1px; }\n  .method-of-trans-container h2 {\n    font-size: 1.2em;\n    text-align: left;\n    color: #333; }\n  .method-of-trans-container p {\n    padding-top: 3.5em; }\n\n.method-of-trans-label {\n  display: inline-block;\n  width: 5em;\n  height: 3em;\n  background: #fff;\n  margin: 1em;\n  padding: 1em 1em 3em 1em;\n  color: #cbcbcb;\n  border: 2px solid #cbcbcb;\n  text-align: center;\n  border-radius: 50%;\n  cursor: pointer; }\n  .method-of-trans-label .fa-male {\n    display: block; }\n\ninput.method-of-trans-input {\n  display: none;\n  margin: 10px; }\n  input.method-of-trans-input:checked + label {\n    background: #3FB083;\n    border: 2px solid #3FB083;\n    color: #fff; }\n", ""]);
+	exports.push([module.id, "@media only screen and (min-width: 600px) {\n  .method-of-trans-container {\n   width: 28em;\n    margin: 0 auto 1em auto; } }\n\n@media only screen and (max-width: 599px) {\n  .method-of-trans-container {\n    width: 90%;\n    margin: 0 auto 1em auto; } }\n\n.method-of-trans-container-hide {\n  display: none; }\n\n.method-of-trans-container {\n  text-align: center;\n  padding: 0.75em 0.75em 1em 0.75em;\n  border: 1px solid #E4E4E4;\n  border-radius: 3px;\n  background: #fff;\n  box-shadow: #999999 0px 1px; }\n  .method-of-trans-container h2 {\n    font-size: 1.2em;\n    text-align: left;\n    color: #333; }\n  .method-of-trans-container p {\n    padding-top: 3.5em; }\n\n.method-of-trans-label {\n  display: inline-block;\n  width: 5em;\n  height: 3em;\n  background: #fff;\n  margin: 1em;\n  padding: 1em 1em 3em 1em;\n  color: #cbcbcb;\n  border: 2px solid #cbcbcb;\n  text-align: center;\n  border-radius: 50%;\n  cursor: pointer; }\n  .method-of-trans-label .fa-male {\n    display: block; }\n\ninput.method-of-trans-input {\n  display: none;\n  margin: 10px; }\n  input.method-of-trans-input:checked + label {\n    background: #ff5e5e;\n    border: 2px solid #ff5e5e;\n    color: #fff; }\n", ""]);
 
 	// exports
 
@@ -61282,7 +61294,7 @@
 
 
 	// module
-	exports.push([module.id, "@media only screen and (min-width: 600px) {\n  .select-pick-up-container {\n    width: 28em;\n    margin: 0 auto 1em auto; } }\n\n@media only screen and (max-width: 599px) {\n  .select-pick-up-container {\n    width: 90%;\n    margin: 0 auto 1em auto; } }\n\n.select-pick-up-container {\n  padding: 0.75em;\n  border: 1px solid #E4E4E4;\n  border-radius: 3px;\n  background: #fff;\n  box-shadow: #999999 0px 1px; }\n  .select-pick-up-container h2 {\n    margin: 0 0.25em 0.25em 0em;\n    padding-bottom: 0.75em;\n    font-size: 1.2em;\n    color: #333; }\n\n.select-pick-up-now {\n  margin-right: 4em;\n  display: inline-block; }\n  .select-pick-up-now label {\n    color: #333; }\n\n.select-pick-up-time {\n  display: inline-block; }\n  .select-pick-up-time label {\n    color: #333; }\n  .select-pick-up-time select {\n    display: inline-block;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    padding: 0.3em 0.5em;\n    border-radius: 3px;\n    background: url(\"/img/down-arrow.png\") no-repeat #F8F8F8;\n    background-position: 85% 55%;\n    width: 6.5em;\n    margin-left: 0.5em; }\n    .select-pick-up-time select:hover {\n      cursor: pointer; }\n", ""]);
+	exports.push([module.id, "@media only screen and (min-width: 600px) {\n  .select-pick-up-container {\n   width: 28em;\n    margin: 0 auto 1em auto; } }\n\n@media only screen and (max-width: 599px) {\n  .select-pick-up-container {\n    width: 90%;\n    margin: 0 auto 1em auto; } }\n\n.select-pick-up-container {\n  padding: 0.75em;\n  border: 1px solid #E4E4E4;\n  border-radius: 3px;\n  background: #fff;\n  box-shadow: #999999 0px 1px; }\n  .select-pick-up-container h2 {\n    margin: 0 0.25em 0.25em 0em;\n    padding-bottom: 0.75em;\n    font-size: 1.2em;\n    color: #333; }\n\n.select-pick-up-now {\n  margin-right: 4em;\n  display: inline-block; }\n  .select-pick-up-now label {\n    color: #333; }\n\n.select-pick-up-time {\n  display: inline-block; }\n  .select-pick-up-time label {\n    color: #333; }\n  .select-pick-up-time select {\n    display: inline-block;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    padding: 0.3em 0.5em;\n    border-radius: 3px;\n    background: url(\"/img/down-arrow.png\") no-repeat #F8F8F8;\n    background-position: 85% 55%;\n    width: 6.5em;\n    margin-left: 0.5em; }\n    .select-pick-up-time select:hover {\n      cursor: pointer; }\n", ""]);
 
 	// exports
 
@@ -61376,7 +61388,7 @@
 
 
 	// module
-	exports.push([module.id, "@media only screen and (min-width: 600px) {\n  .select-if-favorite-container {\n    width: 28em;\n    margin: 0 auto 1em auto; } }\n\n@media only screen and (max-width: 599px) {\n  .select-if-favorite-container {\n    width: 90%;\n    margin: 0 auto 1em auto; } }\n\n.select-if-favorite-container {\n  padding: 0.75em 0.75em 0em 0.75em;\n  border: 1px solid #E4E4E4;\n  border-radius: 3px;\n  background: #fff;\n  box-shadow: #999999 0px 1px; }\n  .select-if-favorite-container h2 {\n    font-size: 1.2em;\n    color: #333; }\n  .select-if-favorite-container p {\n    margin: 0;\n    color: #333; }\n\n.select-if-favorite {\n  width: 20px;\n  position: relative;\n  left: 2.3em;\n  top: -1.3em;\n  margin: 0; }\n  .select-if-favorite label {\n    width: 20px;\n    height: 20px;\n    cursor: pointer;\n    position: absolute;\n    top: 0;\n    left: 0;\n    background: #F8F8F8;\n    border-radius: 3px;\n    border: 1px solid #A6A6A6; }\n    .select-if-favorite label:after {\n      content: '';\n      width: 9px;\n      height: 5px;\n      position: absolute;\n      top: 4px;\n      left: 4px;\n      border: 3px solid #40B284;\n      border-top: none;\n      border-right: none;\n      background: transparent;\n      opacity: 0;\n      transform: rotate(-45deg); }\n    .select-if-favorite label:hover::after {\n      opacity: 0.5; }\n  .select-if-favorite input[type=checkbox] {\n    visibility: hidden; }\n    .select-if-favorite input[type=checkbox]:checked + label:after {\n      opacity: 1; }\n", ""]);
+	exports.push([module.id, "@media only screen and (min-width: 600px) {\n  .select-if-favorite-container {\n    width: 28em;\n    margin: 0 auto 1em auto; } }\n\n@media only screen and (max-width: 599px) {\n  .select-if-favorite-container {\n    width: 90%;\n    margin: 0 auto 1em auto; } }\n\n.select-if-favorite-container {\n  padding: 0.75em 0.75em 0em 0.75em;\n  border: 1px solid #E4E4E4;\n  border-radius: 3px;\n  background: #fff;\n  box-shadow: #999999 0px 1px;  }\n  .select-if-favorite-container h2 {\n    font-size: 1.2em;\n    color: #333; }\n  .select-if-favorite-container p {\n    margin: 0;\n    color: #333; }\n\n.select-if-favorite {\n  width: 20px;\n  position: relative;\n  left: 2.3em;\n  top: -1.3em;\n  margin: 0; }\n  .select-if-favorite label {\n    width: 20px;\n    height: 20px;\n    cursor: pointer;\n    position: absolute;\n    top: 0;\n    left: 0;\n    background: #F8F8F8;\n    border-radius: 3px;\n    border: 1px solid #A6A6A6; }\n    .select-if-favorite label:after {\n      content: '';\n      width: 9px;\n      height: 5px;\n      position: absolute;\n      top: 4px;\n      left: 4px;\n      border: 3px solid  #ff5e5e;\n      border-top: none;\n      border-right: none;\n      background: transparent;\n      opacity: 0;\n      transform: rotate(-45deg); }\n    .select-if-favorite label:hover::after {\n      opacity: 0.5; }\n  .select-if-favorite input[type=checkbox] {\n    visibility: hidden; }\n    .select-if-favorite input[type=checkbox]:checked + label:after {\n      opacity: 1; }\n", ""]);
 
 	// exports
 
@@ -61408,10 +61420,13 @@
 	        expMonthValue: _react2.default.PropTypes.string,
 	        handleCCExpYear: _react2.default.PropTypes.func,
 	        expYearValue: _react2.default.PropTypes.string,
-	        handleCCCVV: _react2.default.PropTypes.func
+			handleCCCVV: _react2.default.PropTypes.func,
+			handleDeliveryNow : _react2.default.PropTypes.func,
+			cashOnDelivery :_react2.default.PropTypes.bool
 	    },
 
 	    render: function render() {
+			var _this = this;
 	        return _react2.default.createElement(
 	            'div',
 	            { className: 'enter-payment-info-container' },
@@ -61583,7 +61598,27 @@
 	                    type: 'text',
 	                    placeholder: 'CSV',
 	                    maxLength: '3',
-	                    required: true })
+	                    required: true }),
+						_react2.default.createElement(
+							'h2',
+							null,
+							'Or'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'cash-on-delivery' },
+							_react2.default.createElement(
+								'label',
+								null,
+								'Cash On Delivery: ',
+								_react2.default.createElement('input', {
+									onChange: function onChange() {
+										return _this.props.handleDeliveryNow(true);
+									},
+									type: 'radio',
+									checked: this.props.cashOnDelivery === true})
+							)
+						),
 	            )
 	        );
 	    }
@@ -61626,8 +61661,7 @@
 
 
 	// module
-	exports.push([module.id, ".enter-payment-info-container h2 {\n  color: #333; }\n\n.payment-info-section {\n  padding: 0 0 1em 0; }\n  .payment-info-section p {\n    margin: 0.5em 0 0.5em 0;\n    color: #333; }\n\n.payment-name input {\n  width: 18em;\n  padding: 0.5em;\n  display: block;\n  border-radius: 3px;\n  border: 1px solid #A6A6A6; }\n  .payment-name input:focus {\n    border: 2px solid #3FB083; }\n\n@media only screen and (min-width: 600px) {\n  .enter-payment-info-container {\n    width: 28em;\n    margin: 0 auto 1em auto; } }\n\n@media only screen and (max-width: 599px) {\n  .enter-payment-info-container {\n    width: 90%;\n    margin: 0 auto 1em auto; } }\n\n.enter-payment-info-container {\n  padding: 0.75em;\n  border: 1px solid #E4E4E4;\n  border-radius: 3px;\n  background: #fff;\n  box-shadow: #999999 0px 1px; }\n", ""]);
-
+	exports.push([module.id, ".enter-payment-info-container textarea{\n  font-family: 'Yusei Magic', sans-serif;\n  border: 1px solid #A6A6A6; border-radius: 5px; height:2.5em; padding: 0.5em; width: 21.5em; font-size: 1em;  margin-bottom:5px;	}\n\n .enter-payment-info-container textarea:focus{\n border: 2px solid  #ff5e5e;}\n\n  .enter-payment-info-container h2 {\n font-family: 'Yusei Magic', sans-serif;\n color: #333; }\n\n.payment-info-section {\n  padding: 0 0 1em 0; }\n  .payment-info-section p {\n  font-family: 'Yusei Magic', sans-serif;\n  margin: 0.5em 0 0.5em 0;\n    color: #333; }\n\n   .payment-month-year select{\n  font-family: 'Yusei Magic', sans-serif;\n color:#333; display: inline-block; border-radius: 3px;  padding:0.5em;  -webkit-appearance: none;  -moz-appearance: none;  appearance: none; }\n\n    .payment-month-year select:hover{\n cursor: pointer;}\n\n   .payment-month { background: url('/img/down-arrow.png') no-repeat #F8F8F8;   background-position: 85% 55%;  width: 6.8em;  margin-right: 0.5em;}\n\n  .payment-year {background: url('/img/down-arrow.png') no-repeat #F8F8F8;  background-position: 85% 55%;  width: 5.1em;}\n\n   .payment-name input,.payment-card-number input,.payment-csv input  {\n  font-family: 'Yusei Magic', sans-serif;\n   width: 18em;\n  padding: 0.5em;\n  display: block;\n  border-radius: 3px;\n  border: 1px solid #A6A6A6; }\n  .payment-name input:focus,.payment-card-number input:focus,.payment-csv input:focus {\n border-radius:3px;\n   border: 2px solid #ff5e5e; }\n\n   .cash-on-delivery{\n     display: inline-block; }\n\n .cash-on-delivery input[type=radio]{position:relative; bottom:1em;  color:#ff7d7d;}  @media only screen and (min-width: 600px) {\n  .enter-payment-info-container {\n    width: 28em;\n    margin: 0 auto 1em auto; } }\n\n@media only screen and (max-width: 599px) {\n  .enter-payment-info-container {\n    width: 90%;\n    margin: 0 auto 1em auto; } }\n\n.enter-payment-info-container {\n  padding: 0.75em;\n  border: 1px solid #E4E4E4;\n  border-radius: 3px;\n  background: #fff;\n  box-shadow: #999999 0px 1px; }\n", ""]);
 	// exports
 
 
@@ -61720,7 +61754,7 @@
 
 
 	// module
-	exports.push([module.id, ".item-notification-text {\n  color: #f6f6f6;\n  text-align: center;\n  text-decoration: none; }\n\n.item-notification {\n  color: #f6f6f6;\n  font-size: 1.1em;\n  padding-top: 0.7em;\n  height: 38px;\n  position: fixed;\n  left: 0;\n  text-align: center;\n  text-decoration: none;\n  top: -45px;\n  width: 100%;\n  animation: item-notification 1s ease forwards;\n  z-index: 999999; }\n\n.add-item-notification {\n  background-color: #3FB083; }\n\n.delete-item-notification {\n  background-color: #E2514E; }\n\n.error-item-notification {\n  background-color: #FAD675; }\n\n.item-notification-show {\n  display: block; }\n\n.item-notification-hide {\n  display: none; }\n\n@keyframes item-notification {\n  0% {\n    opacity: 0; }\n  50% {\n    opacity: 1; }\n  100% {\n    top: 0; } }\n\n@keyframes item-notification-hide {\n  0% {\n    top: 0; }\n  50% {\n    top: -25; }\n  100% {\n    top: -45; } }\n", ""]);
+	exports.push([module.id, ".item-notification-text {\n font-family: 'Yusei Magic', sans-serif;\n color: #f6f6f6;\n  text-align: center;\n  text-decoration: none; }\n\n.item-notification {\n  color: #f6f6f6;\n  font-size: 1.1em;\n  padding-top: 0.7em;\n  height: 38px;\n  position: fixed;\n  left: 0;\n  text-align: center;\n  text-decoration: none;\n  top: -45px;\n  width: 100%;\n  animation: item-notification 1s ease forwards;\n  z-index: 999999; }\n\n.add-item-notification {\n  background-color: #0c8516; }\n\n.delete-item-notification {\n  background-color: #E2514E; }\n\n.error-item-notification {\n  background-color: #FAD675; }\n\n.item-notification-show {\n  display: block; }\n\n.item-notification-hide {\n  display: none; }\n\n@keyframes item-notification {\n  0% {\n    opacity: 0; }\n  50% {\n    opacity: 1; }\n  100% {\n    top: 0; } }\n\n@keyframes item-notification-hide {\n  0% {\n    top: 0; }\n  50% {\n    top: -25; }\n  100% {\n    top: -45; } }\n", ""]);
 
 	// exports
 
@@ -61760,8 +61794,7 @@
 
 
 	// module
-	exports.push([module.id, ".additional-info-container {\n  margin-left: 0em;\n  margin-top: 4em; }\n\n.title-cover h1 {\n  color: #333; }\n\n.next-button-container {\n  text-align: center;\n  margin-bottom: 3em; }\n\n.userProgress {\n  position: relative;\n  width: 100%;\n  height: 30px;\n  background-color: #fff;\n  border-radius: 5px;\n  margin: 0 auto; }\n\n#threeOfFive {\n  position: absolute;\n  width: 60%;\n  height: 100%;\n  background: #3FB083;\n  border-radius: 5px 0px 0px 5px; }\n\n.additional-info-container {\n  margin-right: 1em;\n  overflow-x: hidden; }\n\n@media only screen and (min-width: 600px) {\n  .additional-info-container .userProgress {\n    width: 25em; } }\n\n@media only screen and (min-width: 700px) {\n  .additional-info-container {\n    margin-left: 0em;\n    margin-top: 4em; } }\n\n@media only screen and (min-width: 960px) {\n  .additional-info-container {\n    margin-top: 0em;\n    margin-left: 5em; } }\n", ""]);
-
+	exports.push([module.id, ".additional-info-container {\n background-image: url(\"/img/coverpage.png\");  background-size: cover;   position: relative; justify-content: center; margin-left: 0em;\n  margin-top: 4em; }\n\n.title-cover h1 {\n font-family: 'Yusei Magic', sans-serif; color: #000; }\n\n.next-button-container {\n  text-align: center;\n  margin-bottom: 3em; }\n\n.userProgress {\n  position: relative;\n  width: 100%;\n  height: 30px;\n  background-color: #fff;\n  border-radius: 5px;\n  margin: 0 auto; }\n\n#threeOfFive {\n  position: absolute;\n  width: 60%;\n  height: 100%;\n  background:  #ff5e5e;\n  border-radius: 5px 0px 0px 5px; }\n\n.additional-info-container {\n  margin-right: 1em;\n  overflow-x: hidden; }\n\n@media only screen and (min-width: 600px) {\n  .additional-info-container .userProgress {\n    width: 25em; } }\n\n@media only screen and (min-width: 700px) {\n  .additional-info-container {\n    margin-left: 0em;\n    margin-top: 4em; } }\n\n@media only screen and (min-width: 960px) {\n  .additional-info-container {\n    margin-top: 0em;\n    margin-left: 5em; } }\n", ""]);
 	// exports
 
 
@@ -62095,7 +62128,7 @@
 
 
 	// module
-	exports.push([module.id, ".order-summary-container {\n  text-align: center;\n  margin-left: 0em;\n  margin-top: 4em; }\n  .order-summary-container h1 {\n    color: #333; }\n\n.os-order-total-container {\n  width: 50%;\n  margin: 0 auto; }\n\n.order-summary-button {\n  display: block;\n  background: #3FB083;\n  margin: 0 auto; }\n  .order-summary-button:hover {\n    background: #43BB8B; }\n\n.order-summary-edit-button {\n  border: 2px solid #f9d266;\n  background: #fff;\n  color: #f9d266; }\n  .order-summary-edit-button:hover {\n    background: #fad675;\n    color: #fff; }\n\n.order-summary-link {\n  text-decoration: none; }\n\n.userProgress {\n  position: relative;\n  width: 100%;\n  height: 30px;\n  background-color: #fff;\n  border-radius: 5px;\n  margin: 0 auto;\n  border: 1px solid #E4E4E4; }\n\n#fourOfFive {\n  position: absolute;\n  width: 80%;\n  height: 100%;\n  background: #3FB083;\n  border-radius: 5px 0px 0px 5px; }\n\n@media only screen and (min-width: 600px) {\n  .order-summary-container .userProgress {\n    width: 25em; } }\n\n@media only screen and (min-width: 960px) {\n  .order-summary-container {\n    margin-top: 0em;\n    margin-left: 1em;\n    padding-bottom: 3em; } }\n", ""]);
+	exports.push([module.id, ".order-summary-container {\n background-image: url(\"/img/coverpage.png\");  background-size: cover;   position: relative; justify-content: center; text-align: center;\n  margin-left: 0em;\n  margin-top: 4em; font-family: 'Yusei Magic', sans-serif;\n}\n  .order-summary-container h1 {\n  font-family: 'Yusei Magic', sans-serif;  color: #000; }\n\n.os-order-total-container {\n  width: 50%;\n  margin: 0 auto; }\n\n.order-summary-button {\n  display: block;\n color:#ff5e5e; background:#fff;\n border: 2px solid #ff5e5e; margin: 0 auto; }\n  .order-summary-button:hover {\n    background: #ff5e5e; color:#fff; }\n\n.order-summary-edit-button {\n  border: 2px solid #f9d266;\n  background: #fff;\n  color: #f9d266; }\n  .order-summary-edit-button:hover {\n    background: #fad675;\n    color: #fff; }\n\n.order-summary-link {\n  text-decoration: none; }\n\n.userProgress {\n  position: relative;\n  width: 100%;\n  height: 30px;\n  background-color: #fff;\n  border-radius: 5px;\n  margin: 0 auto;\n  border: 1px solid #E4E4E4; }\n\n#fourOfFive {\n  position: absolute;\n  width: 80%;\n  height: 100%;\n  background:  #ff5e5e;\n  border-radius: 5px 0px 0px 5px; }\n\n@media only screen and (min-width: 600px) {\n  .order-summary-container .userProgress {\n    width: 25em; } }\n\n@media only screen and (min-width: 960px) {\n  .order-summary-container {\n    margin-top: 0em;\n    margin-left: 1em;\n    padding-bottom: 3em; } }\n", ""]);
 
 	// exports
 
@@ -62304,7 +62337,7 @@
 
 
 	// module
-	exports.push([module.id, ".order-ready-time {\n  font-size: 36px;\n  text-align: center;\n  color: #333; }\n\n.order-ready-time-container {\n  padding-top: 2em;\n  padding-bottom: 2em;\n  border-bottom: 1px solid #E4E4E4; }\n\n.order-ready-time-pickup {\n  color: #888; }\n\n.order-ready-time-container h2 {\n  margin-top: 0;\n  text-align: center;\n  font-size: 1.2em;\n  width: 70%;\n  margin: 0 auto;\n  color: #333; }\n\n.order-ready-time-container p {\n  text-align: center;\n  font-size: 1em;\n  margin: 0em 0em 0.8em 0em; }\n\n.method-of-trans-icon {\n  text-align: center;\n  margin-bottom: 1.75em; }\n\n.order-ready-time-divider {\n  width: 100%;\n  margin: 0 auto;\n  padding-top: 1em; }\n", ""]);
+	exports.push([module.id, ".order-ready-time {\n  font-family: 'Yusei Magic', sans-serif;\n  text-align: center;\n  color: #000; }\n\n.order-ready-time-container {\n  padding-top: 2em;\n  padding-bottom: 2em;\n  border-bottom: 1px solid #E4E4E4; }\n\n.order-ready-time-pickup {\n  color: #888; }\n\n.order-ready-time-container h2 {\n font-family: 'Yusei Magic', sans-serif; margin-top: 0;\n  text-align: center;\n  font-size: 1.1em;\n  width: 70%;\n  margin: 0 auto;\n  color: #333; }\n\n.order-ready-time-container p {\n  text-align: center;\n  font-size: 1em;\n  margin: 0em 0em 0.8em 0em; }\n\n.method-of-trans-icon {\n  text-align: center;\n  margin-bottom: 1.75em; }\n\n.order-ready-time-divider {\n   background-image: url(\"/img/coverpage.png\");  background-size: cover;   position: relative; justify-content: center;  width: 100%;\n  margin: 0 auto;\n  padding-top: 1em; }\n", ""]);
 
 	// exports
 
@@ -62337,7 +62370,7 @@
 			var selectedShop = this.props.selectedShop;
 			
 			console.log(this.props.selectedShop);
-			console.log(this.props.distance);
+
 	        return _react2.default.createElement(
 	            'div',
 	            { className: 'shop-details-container' },
@@ -62407,7 +62440,7 @@
 
 
 	// module
-	exports.push([module.id, ".shop-details-container {\n  padding: 1.75em 0em 1.75em 0em;\n  text-align: center;\n  border-bottom: 1px solid #E4E4E4; }\n  .shop-details-container h2 {\n    padding: 0 0.25em 0.5em 0.25em;\n    color: #333; }\n  .shop-details-container p {\n    margin: 0.5em 0.25em 0.5em 0.25em;\n    color: #888; }\n", ""]);
+	exports.push([module.id, ".shop-details-container {\n  padding: 1.75em 0em 1.75em 0em;\n  text-align: center;\n  border-bottom: 1px solid #E4E4E4; }\n  .shop-details-container h2 {\n  font-family: 'Yusei Magic', sans-serif;  padding: 0 0.25em 0.5em 0.25em;\n    color: #333; }\n  .shop-details-container p {\n  font-family: 'Yusei Magic', sans-serif;\n  Place Your Order  margin: 0.5em 0.25em 0.5em 0.25em;\n    color: #888; }\n", ""]);
 
 	// exports
 
@@ -62518,7 +62551,7 @@
 
 
 	// module
-	exports.push([module.id, "button.confirmation-button {\n  width: 13em;\n  display: block;\n  margin: 0 auto 0.5em auto; }\n\n.confirmation-button-wrap {\n  text-align: center;\n  padding-bottom: 1.75em;\n  padding-top: 1.75em; }\n  .confirmation-button-wrap a {\n    text-decoration: none; }\n  .confirmation-button-wrap .fa-map-marker, .confirmation-button-wrap .fa-mobile {\n    padding-left: .4em; }\n", ""]);
+	exports.push([module.id, "button.confirmation-button {\n   font-family: 'Yusei Magic', sans-serif;\n width: 13em;\n  display: block;\n  margin: 0 auto 0.5em auto; }\n\n.confirmation-button-wrap {\n  font-family: 'Yusei Magic', sans-serif;\n  text-align: center;\n  padding-bottom: 1.75em;\n  padding-top: 1.75em; }\n  .confirmation-button-wrap a {\n  font-family: 'Yusei Magic', sans-serif;\n   text-decoration: none; }\n  .confirmation-button-wrap .fa-map-marker, .confirmation-button-wrap .fa-mobile {\n    padding-left: .4em; }\n", ""]);
 
 	// exports
 
@@ -62558,7 +62591,7 @@
 
 
 	// module
-	exports.push([module.id, ".confirmation-view-container {\n  width: 90%;\n  border: 1px solid #E4E4E4;\n  border-radius: 3px;\n  background: #fff;\n  margin-top: 4em;\n  margin: 6em auto 4em auto;\n  box-shadow: #999999 0px 1px; }\n  .confirmation-view-container .title-cover {\n    text-align: center;\n    margin-bottom: 0em;\n    padding: 2em 2em 1em 2em; }\n    .confirmation-view-container .title-cover h1 {\n      color: #333; }\n    .confirmation-view-container .title-cover .confirmation-success {\n      border: none;\n      vertical-align: middle; }\n      .confirmation-view-container .title-cover .confirmation-success .fa-check-circle {\n        color: #3FB083; }\n\n.back-to-dashboard {\n  width: 13em;\n  margin: 2em auto 3em auto;\n  display: block; }\n  .back-to-dashboard .fa-home {\n    padding-left: .4em; }\n\n@media only screen and (min-width: 500px) {\n  .confirmation-view-container .title-cover h1 {\n    display: inline-block; }\n  .confirmation-view-container .title-cover .confirmation-success {\n    display: inline-block;\n    margin-left: 1em; }\n    .confirmation-view-container .title-cover .confirmation-success .fa-check-circle {\n      color: #3FB083;\n      font-size: 6em; } }\n\n@media only screen and (min-width: 600px) {\n  .confirmation-view-container {\n    width: 28em;\n    margin: 6em auto 2.5em auto; } }\n\n@media only screen and (min-width: 960px) {\n  .confirmation-view-container {\n    margin-top: 0em;\n    margin: 4em auto 2.5em auto; } }\n", ""]);
+	exports.push([module.id, ".confirmation-view-container {\n  font-family: 'Yusei Magic', sans-serif;\n  width: 90%;\n  border: 1px solid #E4E4E4;\n  border-radius: 3px;\n  background: #fff;\n  margin-top: 4em;\n  margin: 6em auto 4em auto;\n  box-shadow: #999999 0px 1px; }\n  .confirmation-view-container .title-cover {\n    text-align: center;\n    margin-bottom: 0em;\n    padding: 2em 2em 1em 2em; }\n    .confirmation-view-container .title-cover h1 {\n   font-family: 'Yusei Magic', sans-serif;   color: #000; }\n    .confirmation-view-container .title-cover .confirmation-success {\n      border: none;\n      vertical-align: middle; }\n      .confirmation-view-container .title-cover .confirmation-success .fa-check-circle {\n        color: #ff5e5e; }\n\n.back-to-dashboard {\n  width: 13em;\n  margin: 2em auto 3em auto;\n  display: block; }\n  .back-to-dashboard .fa-home {\n    padding-left: .4em; }\n\n@media only screen and (min-width: 500px) {\n  .confirmation-view-container .title-cover h1 {\n  font-family: 'Yusei Magic', sans-serif;  display: inline-block; }\n  .confirmation-view-container .title-cover .confirmation-success {\n    display: inline-block;\n    margin-left: 1em; }\n    .confirmation-view-container .title-cover .confirmation-success .fa-check-circle {\n      color: #ff5e5e;\n      font-size: 6em; } }\n\n@media only screen and (min-width: 600px) {\n  .confirmation-view-container {\n  background-image: url(\"/img/coverpage.png\");  background-size: cover;   position: relative; justify-content: center;  width: 28em;\n    margin: 6em auto 2.5em auto;  font-family: 'Yusei Magic', sans-serif;\n } }\n\n@media only screen and (min-width: 960px) {\n  .confirmation-view-container {\n      margin-top: 0em;\n    margin: 4em auto 2.5em auto; } }\n", ""]);
 
 	// exports
 
@@ -62691,7 +62724,7 @@
 	        var previousOrderItems = this.props.previousOrder.items.map(function (item, index) {
 				totalcost +=item.price*item.quantity;
 				totalcost += totalcost*0.1;
-				totalcost=totalcost.toFixed(2);
+				//totalcost=totalcost.toFixed(2);
 				
 				return _react2.default.createElement(_PreviousOrderItem2.default, {
 	                previousOrderItem: item,	
@@ -62765,7 +62798,7 @@
 
 
 	// module
-	exports.push([module.id, ".prev-orders {\n  border: 1px solid #E4E4E4;\n  margin: 0 auto 1.2em auto;\n  padding: 0.5em 0em 0.5em 0em;\n  background: #fff;\n  border-radius: 3px; }\n  .prev-orders h2 {\n    border-bottom: 2px solid #E4E4E4;\n    padding: 0em 0.5em 0.25em 0.5em;\n    font-size: 1.2em; }\n  .prev-orders p {\n    padding: 0em 0.5em 0.25em 0.5em;\n    margin: 0; }\n", ""]);
+	exports.push([module.id, ".prev-orders {\n font-family: 'Yusei Magic', sans-serif;\n border: 1px solid #E4E4E4;\n  margin: 0 auto 1.2em auto;\n  padding: 0.5em 0em 0.5em 0em;\n  background: #fff;\n  border-radius: 3px; }\n  .prev-orders h2 {\n    border-bottom: 2px solid #E4E4E4;\n    padding: 0em 0.5em 0.25em 0.5em;\n    font-size: 1.2em; }\n  .prev-orders p {\n    padding: 0em 0.5em 0.25em 0.5em;\n    margin: 0; }\n", ""]);
 
 	// exports
 
@@ -62980,7 +63013,7 @@
 
 
 	// module
-	exports.push([module.id, ".favorite-orders-container {\n  width: 90%;\n  margin: 4em auto 0em auto;\n  border-radius: 3px; }\n\n@media only screen and (min-width: 600px) {\n  .favorite-orders-wrap {\n    width: 28em;\n    margin: 4em auto 2.5em auto; } }\n\n@media only screen and (min-width: 960px) {\n  .favorite-orders-container {\n    margin-top: 0em;\n    margin-left: 5em; } }\n", ""]);
+	exports.push([module.id, ".favorite-orders-container {\n font-family: 'Yusei Magic', sans-serif;\n width: 90%;\n  margin: 4em auto 0em auto;\n  border-radius: 3px; }\n\n@media only screen and (min-width: 600px) {\n  .favorite-orders-wrap {\n    width: 28em;\n    margin: 4em auto 2.5em auto; } }\n\n@media only screen and (min-width: 960px) {\n  .favorite-orders-container {\n    margin-top: 0em;\n    margin-left: 5em; } }\n", ""]);
 
 	// exports
 

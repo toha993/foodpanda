@@ -18,6 +18,7 @@ var orderSchema = mongoose.Schema({
     timeSelectedForPickup: String,
     expectedPickupTime: String,
     completed: Boolean,
+    cashondelivery : Boolean
 });
 
 var Orders = mongoose.model('Order', orderSchema);
